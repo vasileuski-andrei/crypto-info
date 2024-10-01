@@ -1,13 +1,13 @@
-package eu.senla.crypto_info;
+package eu.senla.cryptoservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CryptoInfoApplicationTests {
+class CryptoServiceApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: crypto-service
+  data:
+    mongodb:
+      database: crypto
+      uri: mongodb://localhost:27017/crypto
+
+coinmarketcap:
+  api-key: 9b39aaa5-b273-4861-8c0f-090ebc1e9d11
