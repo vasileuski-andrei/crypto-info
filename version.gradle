@@ -1,0 +1,7 @@
+ext {
+    versions = [
+            'mongodb' : '3.1.0',
+            'mapstruct' : '1.5.3.Final',
+            'kafka' : '2.9.1',
+    ]
+}

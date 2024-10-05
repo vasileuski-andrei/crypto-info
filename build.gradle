@@ -5,6 +5,8 @@ plugins {
 	id "io.freefair.lombok" version "6.3.0" apply false
 }
 
+apply from: 'version.gradle'
+
 subprojects {
 	repositories {
 		mavenCentral()
@@ -15,8 +17,19 @@ subprojects {
 	apply plugin: 'io.spring.dependency-management'
 	apply plugin: 'io.freefair.lombok'
 
-
 	tasks.named('test') {
 		useJUnitPlatform()
 	}
 }
+
+allprojects {
+	jar {
+		enabled = false
+	}
+
+	bootJar {
+		enabled = false
+	}
+}
+
+
