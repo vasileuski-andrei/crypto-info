@@ -3,9 +3,11 @@ package eu.senla.cryptoservice.service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import eu.senla.cryptoservice.entity.CoinmarketcapCurrencyEntity;
+import eu.senla.cryptoservice.util.ExmoUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -17,17 +19,40 @@ public class RequestService {
     private final ObjectMapper objectMapper;
 
     @Value("${coinmarketcap.api-key}")
+    private String coinmarketcapUri;
+    @Value("${coinmarketcap.api-key}")
     private String coinmarketcapApiKey;
+    @Value("${exmo.uri}")
+    private String exmoUri;
+    @Value("${exmo.api-key}")
+    private String exmoApiKey;
+    @Value("${exmo.s-key}")
+    private String exmoSecretKey;
 
     public CoinmarketcapCurrencyEntity getCoinmarketcapCrypto() {
-        String statusMono = webClient
+        String response = webClient
                 .get()
-                .uri("/v2/cryptocurrency/quotes/latest?symbol=BTC")
+                .uri(coinmarketcapUri)
                 .header("X-CMC_PRO_API_KEY", coinmarketcapApiKey)
                 .retrieve().bodyToMono(String.class)
                 .block();
 
-        return extractCoinmarketcapDataFromJson(statusMono);
+        return extractCoinmarketcapDataFromJson(response);
+    }
+
+    public void getExmoInfo() {
+        String body = ExmoUtil.getBody();
+        String sign = ExmoUtil.getSign(exmoSecretKey, body);
+        String response = webClient
+                .post()
+                .uri(exmoUri)
+                .contentType(MediaType.valueOf(MediaType.APPLICATION_FORM_URLENCODED_VALUE))
+                .header("Key", exmoApiKey)
+                .header("Sign", sign)
+                .bodyValue(body)
+                .retrieve().bodyToMono(String.class)
+                .block();
+        System.out.println();
     }
 
     @SneakyThrows

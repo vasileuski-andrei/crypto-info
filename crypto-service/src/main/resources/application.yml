@@ -7,4 +7,12 @@ spring:
       uri: mongodb://localhost:27017/crypto
 
 coinmarketcap:
-  api-key: 9b39aaa5-b273-4861-8c0f-090ebc1e9d11
+  uri: https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=BTC
+  api-key:
+
+exmo:
+  uri: https://api.exmo.com/v1.1/user_info
+  api-key:
+  s-key:
+
+

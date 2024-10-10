@@ -10,7 +10,6 @@ public class WebClientConfiguration {
     @Bean
     public WebClient webClient() {
         return WebClient.builder()
-                .baseUrl("https://pro-api.coinmarketcap.com")
                 .build();
     }
 }
