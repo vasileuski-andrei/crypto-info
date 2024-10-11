@@ -19,4 +19,9 @@ public class CoinmarketcapCurrencyServiceImpl implements CoinmarketcapCurrencySe
         CoinmarketcapCurrencyEntity coinmarketcapCurrencyEntity = requestService.getCoinmarketcapCrypto();
         coinmarketcapCurrencyRepository.save(coinmarketcapCurrencyEntity);
     }
+
+    @Override
+    public void save(CoinmarketcapCurrencyEntity entity) {
+        coinmarketcapCurrencyRepository.save(entity);
+    }
 }

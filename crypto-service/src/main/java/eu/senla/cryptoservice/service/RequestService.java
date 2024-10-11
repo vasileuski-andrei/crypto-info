@@ -24,7 +24,7 @@ public class RequestService {
     private final WebClient webClient;
     private final ObjectMapper objectMapper;
 
-    @Value("${coinmarketcap.api-key}")
+    @Value("${coinmarketcap.uri}")
     private String coinmarketcapUri;
     @Value("${coinmarketcap.api-key}")
     private String coinmarketcapApiKey;

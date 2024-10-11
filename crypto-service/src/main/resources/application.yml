@@ -32,6 +32,9 @@ spring:
       topic-tg-message: TG.MESSAGE
       topic-exmo-user-info: EXMO.USER-INFO
 
+  quartz:
+    cron-schedule: 0 * * ? * *
+
 coinmarketcap:
   uri: https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=BTC
   api-key:
