@@ -17,6 +17,10 @@ subprojects {
 	apply plugin: 'io.spring.dependency-management'
 	apply plugin: 'io.freefair.lombok'
 
+	dependencies {
+		implementation "org.springframework.kafka:spring-kafka:${versions.kafka}"
+	}
+
 	tasks.named('test') {
 		useJUnitPlatform()
 	}

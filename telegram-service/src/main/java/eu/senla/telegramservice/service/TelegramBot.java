@@ -1,5 +1,9 @@
 package eu.senla.telegramservice.service;
 
+import eu.senla.telegramservice.dto.TgDataDto;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
@@ -12,30 +16,40 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 public class TelegramBot extends TelegramLongPollingBot {
 
+    private final KafkaTemplate<String, Object> kafkaTemplate;
     private String botName;
+    private Message message;
 
-    public TelegramBot(String botToken, String botName) {
+    @Value("${spring.kafka.topics.topic-tg-message}")
+    private String tgMessageTopic;
+
+    public TelegramBot(String botToken, String botName, KafkaTemplate<String, Object> kafkaTemplate) {
         super(botToken);
         this.botName = botName;
+        this.kafkaTemplate = kafkaTemplate;
     }
 
     @Override
     public void onUpdateReceived(Update update) {
-        Message message = update.getMessage();
+        message = update.getMessage();
         String messageText = message.getText();
 
         if (messageText.equals("/start")) {
-            sendAnswer(message, "Let's go");
+            sendAnswer("Let's go");
         } else if (messageText.equals("my info")) {
-            //todo kafkaTemplate.send()
+            TgDataDto tgDataDto = TgDataDto.builder()
+                    .messageType("my info")
+                    .build();
+            kafkaTemplate.send(tgMessageTopic, tgDataDto);
         } else {
-            sendAnswer(message, "Please enter a valid request.");
+            sendAnswer("Please enter a valid request.");
         }
     }
 
-    private void sendAnswer(Message message, String answer) {
+    public void sendAnswer(String answer) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
         sendMessage.setChatId(message.getChatId().toString());
@@ -46,7 +60,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             setButtons(sendMessage);
             execute(sendMessage);
         } catch (TelegramApiException e) {
-            e.printStackTrace();
+            log.error("Error sending answer to tg bot. Cause: {}", e.toString());
         }
     }
 

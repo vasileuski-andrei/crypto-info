@@ -21,7 +21,7 @@ public class ExmoUtil {
 
     public String getBody() {
         Map<String, String> arguments = new HashMap<>();
-        arguments.put("nonce", "" + ++nonce);
+        arguments.put("nonce", String.valueOf(++nonce));
 
         String postData = "";
         for (Map.Entry<String, String> argumentsEntry : arguments.entrySet()) {

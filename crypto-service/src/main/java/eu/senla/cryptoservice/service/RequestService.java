@@ -3,6 +3,7 @@ package eu.senla.cryptoservice.service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import eu.senla.cryptoservice.entity.CoinmarketcapCurrencyEntity;
+import eu.senla.cryptoservice.entity.ExmoInfoEntity;
 import eu.senla.cryptoservice.util.ExmoUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -10,6 +11,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -40,7 +46,7 @@ public class RequestService {
         return extractCoinmarketcapDataFromJson(response);
     }
 
-    public void getExmoInfo() {
+    public ExmoInfoEntity getExmoInfo() {
         String body = ExmoUtil.getBody();
         String sign = ExmoUtil.getSign(exmoSecretKey, body);
         String response = webClient
@@ -52,7 +58,8 @@ public class RequestService {
                 .bodyValue(body)
                 .retrieve().bodyToMono(String.class)
                 .block();
-        System.out.println();
+
+        return extractExmoDataFromJson(response);
     }
 
     @SneakyThrows
@@ -67,6 +74,21 @@ public class RequestService {
                 .percentChange24h(data.get("percent_change_24h").asDouble())
                 .percentChange7d(data.get("percent_change_7d").asDouble())
                 .percentChange30d(data.get("percent_change_30d").asDouble())
+                .build();
+    }
+
+    @SneakyThrows
+    private ExmoInfoEntity extractExmoDataFromJson(String json) {
+        JsonNode jsonNode = objectMapper.readTree(json);
+        String[] balances = jsonNode.get("balances").toString().replace("}", "").split(",");
+        List<String> notZeroBalances = Arrays.stream(balances)
+                .filter(currency -> !currency.matches(".+\"0\""))
+                .collect(Collectors.toList());
+
+        return ExmoInfoEntity.builder()
+                .uid(String.valueOf(jsonNode.get("uid")))
+                .dateTime(LocalDateTime.now())
+                .balances(notZeroBalances)
                 .build();
     }
 }
