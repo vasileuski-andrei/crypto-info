@@ -1,11 +1,46 @@
 version: '3.5'
 
 services:
+  crypto-service:
+    image: crypto-service:latest
+    container_name: crypto-service
+    build:
+      context: crypto-service
+    ports:
+      - "8080:8080"
+    environment:
+      BOOTSTRAP_SERVERS: ${BOOTSTRAP_SERVERS}
+      MONGO_DATABASE: ${MONGO_DATABASE}
+      MONGO_URI: ${MONGO_URI}
+      TOPIC_TG_MESSAGE: ${TOPIC_TG_MESSAGE}
+      TOPIC_EXMO_USER_INFO: ${TOPIC_EXMO_USER_INFO}
+      QUARTZ_CRON_SCHEDULE: ${QUARTZ_CRON_SCHEDULE}
+      COINMARKETCAP_URI: ${COINMARKETCAP_URI}
+      COINMARKETCAP_API_KEY: ${COINMARKETCAP_API_KEY}
+      EXMO_URI: ${EXMO_URI}
+      EXMO_API_KEY: ${EXMO_API_KEY}
+      EXMO_S_KEY: ${EXMO_S_KEY}
+    depends_on:
+      - crypto-database
   crypto-database:
     container_name: crypto-database
     image: mongo
     ports:
-      - '27017:27017'
+      - '27018:27017'
+
+  telegram-service:
+    image: telegram-service:latest
+    container_name: telegram-service
+    build:
+      context: telegram-service
+    ports:
+      - "8081:8080"
+    environment:
+      BOOTSTRAP_SERVERS: ${BOOTSTRAP_SERVERS}
+      TG_BOTNAME: ${TG_BOTNAME}
+      TG_BOTTOKEN: ${TG_BOTTOKEN}
+      TOPIC_TG_MESSAGE: ${TOPIC_TG_MESSAGE}
+      TOPIC_EXMO_USER_INFO: ${TOPIC_EXMO_USER_INFO}
 
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
