@@ -38,6 +38,7 @@ quartz:
 coinmarketcap:
   uri: ${COINMARKETCAP_URI}
   api-key: ${COINMARKETCAP_API_KEY}
+  cryptocurrency: ${COINMARKETCAP_CRYPTOCURRENCY}
 
 exmo:
   uri: ${EXMO_URI}

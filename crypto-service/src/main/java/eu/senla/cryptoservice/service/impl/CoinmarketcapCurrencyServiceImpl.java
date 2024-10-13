@@ -7,6 +7,8 @@ import eu.senla.cryptoservice.service.RequestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class CoinmarketcapCurrencyServiceImpl implements CoinmarketcapCurrencyService {
@@ -15,13 +17,14 @@ public class CoinmarketcapCurrencyServiceImpl implements CoinmarketcapCurrencySe
     private final CoinmarketcapCurrencyRepository coinmarketcapCurrencyRepository;
 
     @Override
-    public void getCoinmarketcapCurrency() {
-        CoinmarketcapCurrencyEntity coinmarketcapCurrencyEntity = requestService.getCoinmarketcapCrypto();
-        coinmarketcapCurrencyRepository.save(coinmarketcapCurrencyEntity);
+    public List<CoinmarketcapCurrencyEntity> getCoinmarketcapCurrency() {
+        List<CoinmarketcapCurrencyEntity> coinmarketcapCurrencyEntities = requestService.getCoinmarketcapCrypto();
+        saveAll(coinmarketcapCurrencyEntities);
+        return coinmarketcapCurrencyEntities;
     }
 
     @Override
-    public void save(CoinmarketcapCurrencyEntity entity) {
-        coinmarketcapCurrencyRepository.save(entity);
+    public void saveAll(List<CoinmarketcapCurrencyEntity> entities) {
+        coinmarketcapCurrencyRepository.saveAll(entities);
     }
 }

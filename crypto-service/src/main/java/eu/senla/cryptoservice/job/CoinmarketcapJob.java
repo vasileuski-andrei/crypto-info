@@ -8,6 +8,8 @@ import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @DisallowConcurrentExecution
 public class CoinmarketcapJob implements Job {
@@ -17,7 +19,7 @@ public class CoinmarketcapJob implements Job {
 
     @Override
     public void execute(JobExecutionContext context) {
-        CoinmarketcapCurrencyEntity coinmarketcapCrypto = requestService.getCoinmarketcapCrypto();
-        coinmarketcapCurrencyService.save(coinmarketcapCrypto);
+        List<CoinmarketcapCurrencyEntity> coinmarketcapCrypto = requestService.getCoinmarketcapCrypto();
+        coinmarketcapCurrencyService.saveAll(coinmarketcapCrypto);
     }
 }

@@ -2,9 +2,11 @@ package eu.senla.cryptoservice.service;
 
 import eu.senla.cryptoservice.entity.CoinmarketcapCurrencyEntity;
 
+import java.util.List;
+
 public interface CoinmarketcapCurrencyService {
 
-    void getCoinmarketcapCurrency();
+    List<CoinmarketcapCurrencyEntity> getCoinmarketcapCurrency();
 
-    void save(CoinmarketcapCurrencyEntity entity);
+    void saveAll(List<CoinmarketcapCurrencyEntity> entities);
 }

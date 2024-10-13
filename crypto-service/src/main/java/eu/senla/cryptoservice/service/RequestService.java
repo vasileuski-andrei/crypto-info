@@ -28,6 +28,8 @@ public class RequestService {
     private String coinmarketcapUri;
     @Value("${coinmarketcap.api-key}")
     private String coinmarketcapApiKey;
+    @Value("${coinmarketcap.cryptocurrency}")
+    private String cryptocurrency;
     @Value("${exmo.uri}")
     private String exmoUri;
     @Value("${exmo.api-key}")
@@ -35,10 +37,10 @@ public class RequestService {
     @Value("${exmo.s-key}")
     private String exmoSecretKey;
 
-    public CoinmarketcapCurrencyEntity getCoinmarketcapCrypto() {
+    public List<CoinmarketcapCurrencyEntity> getCoinmarketcapCrypto() {
         String response = webClient
                 .get()
-                .uri(coinmarketcapUri)
+                .uri(coinmarketcapUri + cryptocurrency)
                 .header("X-CMC_PRO_API_KEY", coinmarketcapApiKey)
                 .retrieve().bodyToMono(String.class)
                 .block();
@@ -62,18 +64,32 @@ public class RequestService {
         return extractExmoDataFromJson(response);
     }
 
-    @SneakyThrows
-    private CoinmarketcapCurrencyEntity extractCoinmarketcapDataFromJson(String json) {
-        JsonNode jsonNode = objectMapper.readTree(json);
-        JsonNode data = jsonNode.get("data").get("BTC").get(0).get("quote").get("USD");
+    private List<CoinmarketcapCurrencyEntity> extractCoinmarketcapDataFromJson(String json) {
+        String[] cryptocurrencies = cryptocurrency.split(",");
+        List<CoinmarketcapCurrencyEntity> coinmarketcapCurrencyEntities = Arrays.stream(cryptocurrencies)
+                .map(cryptocurrency -> {
+                    JsonNode cryptoData = getCryptoData(json, cryptocurrency);
+                    return buildCoinmarketcapCurrencyEntity(cryptoData, cryptocurrency);
+                }).collect(Collectors.toList());
 
+        return coinmarketcapCurrencyEntities;
+    }
+
+    @SneakyThrows
+    private JsonNode getCryptoData(String json, String cryptocurrency) {
+        JsonNode jsonNode = objectMapper.readTree(json);
+        return jsonNode.get("data").get(cryptocurrency).get(0).get("quote").get("USD");
+    }
+
+    private CoinmarketcapCurrencyEntity buildCoinmarketcapCurrencyEntity(JsonNode cryptoData, String cryptocurrency) {
         return CoinmarketcapCurrencyEntity.builder()
-                .price(data.get("price").decimalValue())
-                .volume24h(data.get("volume_change_24h").decimalValue())
-                .percentChange1h(data.get("percent_change_1h").asDouble())
-                .percentChange24h(data.get("percent_change_24h").asDouble())
-                .percentChange7d(data.get("percent_change_7d").asDouble())
-                .percentChange30d(data.get("percent_change_30d").asDouble())
+                .cryptocurrency(cryptocurrency)
+                .price(cryptoData.get("price").decimalValue())
+                .volume24h(cryptoData.get("volume_change_24h").decimalValue())
+                .percentChange1h(cryptoData.get("percent_change_1h").asDouble())
+                .percentChange24h(cryptoData.get("percent_change_24h").asDouble())
+                .percentChange7d(cryptoData.get("percent_change_7d").asDouble())
+                .percentChange30d(cryptoData.get("percent_change_30d").asDouble())
                 .build();
     }
 

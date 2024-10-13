@@ -15,6 +15,7 @@ public class CoinmarketcapCurrencyEntity {
 
     @Id
     private String id;
+    private String cryptocurrency;
     private BigDecimal price;
     private BigDecimal volume24h;
     private Double percentChange1h;
