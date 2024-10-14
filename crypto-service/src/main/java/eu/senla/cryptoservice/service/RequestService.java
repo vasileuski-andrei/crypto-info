@@ -65,14 +65,11 @@ public class RequestService {
     }
 
     private List<CoinmarketcapCurrencyEntity> extractCoinmarketcapDataFromJson(String json) {
-        String[] cryptocurrencies = cryptocurrency.split(",");
-        List<CoinmarketcapCurrencyEntity> coinmarketcapCurrencyEntities = Arrays.stream(cryptocurrencies)
+        return Arrays.stream(cryptocurrency.split(","))
                 .map(cryptocurrency -> {
                     JsonNode cryptoData = getCryptoData(json, cryptocurrency);
                     return buildCoinmarketcapCurrencyEntity(cryptoData, cryptocurrency);
                 }).collect(Collectors.toList());
-
-        return coinmarketcapCurrencyEntities;
     }
 
     @SneakyThrows
@@ -90,6 +87,7 @@ public class RequestService {
                 .percentChange24h(cryptoData.get("percent_change_24h").asDouble())
                 .percentChange7d(cryptoData.get("percent_change_7d").asDouble())
                 .percentChange30d(cryptoData.get("percent_change_30d").asDouble())
+                .dateTime(LocalDateTime.now())
                 .build();
     }
 

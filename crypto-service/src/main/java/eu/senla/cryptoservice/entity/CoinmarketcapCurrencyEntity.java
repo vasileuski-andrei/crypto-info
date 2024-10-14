@@ -5,6 +5,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Builder
 @Getter
@@ -22,5 +23,6 @@ public class CoinmarketcapCurrencyEntity {
     private Double percentChange24h;
     private Double percentChange7d;
     private Double percentChange30d;
+    private LocalDateTime dateTime;
 }
 

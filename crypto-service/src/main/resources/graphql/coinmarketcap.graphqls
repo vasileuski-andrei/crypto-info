@@ -1,0 +1,10 @@
+type Query {
+  getAllBy(cryptocurrency: String, page: Int, size: Int): [CoinmarketcapCurrencyEntity]
+}
+
+type CoinmarketcapCurrencyEntity {
+    cryptocurrency: String!
+    price: String!
+    volume24h: String!
+    dateTime: String!
+}

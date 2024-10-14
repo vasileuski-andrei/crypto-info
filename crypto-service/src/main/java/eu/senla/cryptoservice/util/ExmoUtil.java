@@ -17,32 +17,31 @@ import java.util.Map;
 public class ExmoUtil {
 
     private static final String HMAC_SHA512 = "HmacSHA512";
+    private static final String CHARSET = "UTF-8";
     private static long nonce;
 
-    public String getBody() {
+    public static String getBody() {
         Map<String, String> arguments = new HashMap<>();
         arguments.put("nonce", String.valueOf(++nonce));
-
         String postData = "";
-        for (Map.Entry<String, String> argumentsEntry : arguments.entrySet()) {
-            Map.Entry argument = (Map.Entry) argumentsEntry;
 
+        for (Map.Entry<String, String> argumentsEntry : arguments.entrySet()) {
             if (postData.length() > 0) {
                 postData += "&";
             }
-            postData += argument.getKey() + "=" + argument.getValue();
+            postData += argumentsEntry.getKey() + "=" + argumentsEntry.getValue();
         }
 
         return postData;
     }
 
-    public String getSign(String apiSecret, String body) {
+    public static String getSign(String apiSecret, String body) {
         String sign = null;
         try {
-            SecretKeySpec key = new SecretKeySpec(apiSecret.getBytes("UTF-8"), HMAC_SHA512);
+            SecretKeySpec key = new SecretKeySpec(apiSecret.getBytes(CHARSET), HMAC_SHA512);
             Mac mac = Mac.getInstance(HMAC_SHA512);
             mac.init(key);
-            sign = Hex.encodeHexString(mac.doFinal(body.getBytes("UTF-8")));
+            sign = Hex.encodeHexString(mac.doFinal(body.getBytes(CHARSET)));
         } catch (UnsupportedEncodingException e) {
             log.error("Unsupported encoding exception: " + e);
         } catch (NoSuchAlgorithmException e) {

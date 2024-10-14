@@ -5,6 +5,8 @@ import eu.senla.cryptoservice.repository.CoinmarketcapCurrencyRepository;
 import eu.senla.cryptoservice.service.CoinmarketcapCurrencyService;
 import eu.senla.cryptoservice.service.RequestService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +17,11 @@ public class CoinmarketcapCurrencyServiceImpl implements CoinmarketcapCurrencySe
 
     private final RequestService requestService;
     private final CoinmarketcapCurrencyRepository coinmarketcapCurrencyRepository;
+
+    @Override
+    public Page<CoinmarketcapCurrencyEntity> findAllBy(String cryptocurrency, int page, int size) {
+        return coinmarketcapCurrencyRepository.findAllByCryptocurrency(cryptocurrency, PageRequest.of(page, size));
+    }
 
     @Override
     public List<CoinmarketcapCurrencyEntity> getCoinmarketcapCurrency() {
