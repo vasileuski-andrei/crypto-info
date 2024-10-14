@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zookeeper-service
+  namespace: crypto-info
+  labels:
+    app: zookeeper-service
+spec:
+  type: NodePort
+  ports:
+    - name: zookeeper-port
+      port: 2181
+      targetPort: 2181
+      nodePort: 30001
+  selector:
+    app: zookeeper
+
+---
+
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  labels:
+    app: zookeeper
+  name: zookeeper
+  namespace: crypto-info
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zookeeper
+  template:
+    metadata:
+      labels:
+        app: zookeeper
+    spec:
+      containers:
+        - name: zookeeper
+          image: library/zookeeper:latest
+          imagePullPolicy: IfNotPresent

@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: crypto-db-service
+  namespace: crypto-info
+  labels:
+    app: crypto-db-service
+spec:
+  selector:
+    app: crypto-db-container
+  ports:
+    - name: mongo
+      port: 27017
+      protocol: TCP
+      targetPort: 27017
+      nodePort: 30002
+  type: NodePort
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crypto-db-deployment
+  namespace: crypto-info
+  labels:
+    app: crypto-db-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crypto-db-container
+  template:
+    metadata:
+      labels:
+        app: crypto-db-container
+    spec:
+      containers:
+        - name: crypto-db-container
+          image: mongo:latest
+          env:
+            - name: MONGO_DB
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: crypto-db

@@ -1,0 +1,101 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: crypto-service
+  namespace: crypto-info
+  labels:
+    app: crypto-service
+spec:
+  selector:
+    app: crypto-service-container
+  ports:
+    - name: crypto-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  type: LoadBalancer
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crypto-service-deployment
+  namespace: crypto-info
+  labels:
+    app: crypto-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crypto-service-container
+  template:
+    metadata:
+      labels:
+        app: crypto-service-container
+    spec:
+      containers:
+        - name: crypto-service-container
+          image: starmdd/crypto-service
+          imagePullPolicy: Always
+          env:
+            - name: MONGO_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: crypto-db
+            - name: MONGO_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: crypto-db-url
+            - name: BOOTSTRAP_SERVERS
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: kafka
+            - name: TOPIC_TG_MESSAGE
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: topic-tg-message
+            - name: TOPIC_EXMO_USER_INFO
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: topic-exmo-user-info
+            - name: QUARTZ_CRON_SCHEDULE
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: quartz-cron-schedule
+            - name: COINMARKETCAP_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: coinmarketcap-uri
+            - name: COINMARKETCAP_CRYPTOCURRENCY
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: coinmarketcap-cryptocurrency
+            - name: EXMO_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: exmo-uri
+            - name: COINMARKETCAP_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: crypto-info-secret
+                  key: coinmarketcap-api-key
+            - name: EXMO_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: crypto-info-secret
+                  key: exmo-api-key
+            - name: EXMO_S_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: crypto-info-secret
+                  key: exmo-s-key

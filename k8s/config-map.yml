@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: crypto-info-config
+data:
+  crypto-db: crypto
+  crypto-db-url: mongodb://crypto-db-service:27017/crypto
+  kafka: kafka:9092
+  topic-tg-message: TG.MESSAGE
+  topic-exmo-user-info: EXMO.USER-INFO
+  quartz-cron-schedule: 0/30 * * * * ?
+  coinmarketcap-uri: https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=
+  coinmarketcap-cryptocurrency: BTC,ETH,BNB,XRP,DOGE,TRX,TON,SHIB,PEPE,FLOKI,TURBO
+  exmo-uri: https://api.exmo.com/v1.1/user_info
+  tg-botname: CryptoExchangeInfoBot
