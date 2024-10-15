@@ -3,7 +3,7 @@ package eu.senla.cryptoservice.service.impl;
 import eu.senla.cryptoservice.entity.CoinmarketcapCurrencyEntity;
 import eu.senla.cryptoservice.repository.CoinmarketcapCurrencyRepository;
 import eu.senla.cryptoservice.service.CoinmarketcapCurrencyService;
-import eu.senla.cryptoservice.service.RequestService;
+import eu.senla.cryptoservice.service.CoinmarketcapRequestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CoinmarketcapCurrencyServiceImpl implements CoinmarketcapCurrencyService {
 
-    private final RequestService requestService;
+    private final CoinmarketcapRequestService requestService;
     private final CoinmarketcapCurrencyRepository coinmarketcapCurrencyRepository;
 
     @Override

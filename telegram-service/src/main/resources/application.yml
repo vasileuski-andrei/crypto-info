@@ -27,6 +27,7 @@ spring:
     topics:
       topic-tg-message: ${TOPIC_TG_MESSAGE}
       topic-exmo-user-info: ${TOPIC_EXMO_USER_INFO}
+      topic-exmo-currency-list: ${TOPIC_EXMO_CURRENCY_LIST}
   telegram:
     botname: ${TG_BOTNAME}
     bottoken: ${TG_BOTTOKEN}

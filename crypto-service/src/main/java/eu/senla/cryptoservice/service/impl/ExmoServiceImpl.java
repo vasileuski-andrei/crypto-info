@@ -1,9 +1,10 @@
 package eu.senla.cryptoservice.service.impl;
 
+import eu.senla.cryptoservice.dto.ExmoInfoDto;
 import eu.senla.cryptoservice.entity.ExmoInfoEntity;
-import eu.senla.cryptoservice.repository.ExmoInfoRepository;
+import eu.senla.cryptoservice.repository.ExmoRepository;
+import eu.senla.cryptoservice.service.ExmoRequestService;
 import eu.senla.cryptoservice.service.ExmoService;
-import eu.senla.cryptoservice.service.RequestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,16 +12,21 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ExmoServiceImpl implements ExmoService {
 
-    private final RequestService requestService;
-    private final ExmoInfoRepository exmoInfoRepository;
+    private final ExmoRequestService exmoRequestService;
+    private final ExmoRepository exmoRepository;
 
     @Override
-    public void getExmoInfo() {
-        requestService.getExmoInfo();
+    public void getUserInfo() {
+        exmoRequestService.getUserInfo();
+    }
+
+    @Override
+    public ExmoInfoDto getCurrencyList() {
+        return exmoRequestService.getCurrencyList();
     }
 
     @Override
     public void save(ExmoInfoEntity entity) {
-        exmoInfoRepository.save(entity);
+        exmoRepository.save(entity);
     }
 }

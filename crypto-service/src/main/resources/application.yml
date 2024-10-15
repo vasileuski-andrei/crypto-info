@@ -31,6 +31,7 @@ spring:
     topics:
       topic-tg-message: ${TOPIC_TG_MESSAGE}
       topic-exmo-user-info: ${TOPIC_EXMO_USER_INFO}
+      topic-exmo-currency-list: ${TOPIC_EXMO_CURRENCY_LIST}
 
 quartz:
   cron-schedule: ${QUARTZ_CRON_SCHEDULE}
@@ -41,8 +42,9 @@ coinmarketcap:
   cryptocurrency: ${COINMARKETCAP_CRYPTOCURRENCY}
 
 exmo:
-  uri: ${EXMO_URI}
+  base-url: ${EXMO_BASE_URL}
+  api-version: ${EXMO_API_VERSION}
+  user-info-urn: ${EXMO_USER_INFO_URN}
+  currency-list-urn: ${EXMO_CURRENCY_LIST_URN}
   api-key: ${EXMO_API_KEY}
   s-key: ${EXMO_S_KEY}
-
-

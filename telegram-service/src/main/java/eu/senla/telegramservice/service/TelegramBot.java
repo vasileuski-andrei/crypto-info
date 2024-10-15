@@ -19,6 +19,9 @@ import java.util.List;
 @Slf4j
 public class TelegramBot extends TelegramLongPollingBot {
 
+    private static final String MY_INFO = "My info";
+    private static final String CURRENCY_LIST = "Currency list";
+
     private final KafkaTemplate<String, Object> kafkaTemplate;
     private String botName;
     private Message message;
@@ -39,14 +42,20 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         if (messageText.equals("/start")) {
             sendAnswer("Let's go");
-        } else if (messageText.equals("my info")) {
-            TgDataDto tgDataDto = TgDataDto.builder()
-                    .messageType("my info")
-                    .build();
-            kafkaTemplate.send(tgMessageTopic, tgDataDto);
+        } else if (messageText.equals(MY_INFO)) {
+            sendEvent(MY_INFO);
+        } else if (messageText.equals(CURRENCY_LIST)) {
+            sendEvent(CURRENCY_LIST);
         } else {
             sendAnswer("Please enter a valid request.");
         }
+    }
+
+    private void sendEvent(String messageType) {
+        TgDataDto tgDataDto = TgDataDto.builder()
+                .messageType(messageType)
+                .build();
+        kafkaTemplate.send(tgMessageTopic, tgDataDto);
     }
 
     public void sendAnswer(String answer) {
@@ -74,7 +83,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         List<KeyboardRow> keyboardRowList = new ArrayList<>();
         KeyboardRow keyboardRow = new KeyboardRow();
-        keyboardRow.add(new KeyboardButton("my info"));
+        keyboardRow.add(new KeyboardButton(MY_INFO));
+        keyboardRow.add(new KeyboardButton(CURRENCY_LIST));
         keyboardRowList.add(keyboardRow);
         replyKeyboardMarkup.setKeyboard(keyboardRowList);
     }
