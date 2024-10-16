@@ -18,10 +18,15 @@ public class KafkaService {
     public void exmoUserInfoListener(ExmoInfoDto exmoInfoDto) {
         StringBuilder response = new StringBuilder(StringUtils.EMPTY);
         for (String currency : exmoInfoDto.getBalances()) {
-            response.append(currency.replace("\"", "")).append("\n");
+            String formattedCurrency = currencyFormatting(currency);
+            response.append(formattedCurrency);
         }
 
         telegramBot.sendAnswer(response.toString());
+    }
+
+    private String currencyFormatting(String currency) {
+        return currency.replace(":", " ").replace("\"", "") + "\n";
     }
 
     @KafkaListener(topics = "${spring.kafka.topics.topic-exmo-currency-list}")
