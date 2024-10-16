@@ -1,15 +1,12 @@
-package eu.senla.telegramservice.dto;
+package eu.senla.shared.dto;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
 
 @Builder
 @Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class CurrencyDto {
 
     private String name;
     private String description;
 }
-

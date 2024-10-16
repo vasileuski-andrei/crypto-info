@@ -1,0 +1,7 @@
+configurations.all {
+    exclude group: "org.springframework.kafka", module:"spring-kafka"
+}
+
+jar {
+    enabled = true
+}

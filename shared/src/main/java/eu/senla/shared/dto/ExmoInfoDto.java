@@ -1,17 +1,14 @@
-package eu.senla.cryptoservice.dto;
+package eu.senla.shared.dto;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
 
 import java.util.List;
 
 @Builder
 @Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class ExmoInfoDto {
 
     private List<CurrencyDto> currencyList;
     private List<String> balances;
 }
-

@@ -1,4 +1,5 @@
 dependencies {
+    implementation project(':shared')
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation "org.telegram:telegrambots-spring-boot-starter:${versions.telegram}"
 }

@@ -1,6 +1,6 @@
 package eu.senla.telegramservice.service;
 
-import eu.senla.telegramservice.dto.ExmoInfoDto;
+import eu.senla.shared.dto.ExmoInfoDto;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.kafka.annotation.KafkaListener;

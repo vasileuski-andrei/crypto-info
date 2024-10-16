@@ -2,10 +2,10 @@ package eu.senla.cryptoservice.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import eu.senla.cryptoservice.dto.CurrencyDto;
-import eu.senla.cryptoservice.dto.ExmoInfoDto;
 import eu.senla.cryptoservice.entity.ExmoInfoEntity;
 import eu.senla.cryptoservice.util.ExmoUtil;
+import eu.senla.shared.dto.CurrencyDto;
+import eu.senla.shared.dto.ExmoInfoDto;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;

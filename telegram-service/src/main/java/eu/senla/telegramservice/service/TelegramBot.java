@@ -1,6 +1,7 @@
 package eu.senla.telegramservice.service;
 
-import eu.senla.telegramservice.dto.TgDataDto;
+import eu.senla.shared.dto.TgDataDto;
+import eu.senla.shared.enums.TgMessageType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -16,11 +17,11 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static eu.senla.shared.enums.TgMessageType.CURRENCY_LIST;
+import static eu.senla.shared.enums.TgMessageType.MY_INFO;
+
 @Slf4j
 public class TelegramBot extends TelegramLongPollingBot {
-
-    private static final String MY_INFO = "My info";
-    private static final String CURRENCY_LIST = "Currency list";
 
     private final KafkaTemplate<String, Object> kafkaTemplate;
     private String botName;
@@ -42,16 +43,16 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         if (messageText.equals("/start")) {
             sendAnswer("Let's go");
-        } else if (messageText.equals(MY_INFO)) {
+        } else if (messageText.equals(MY_INFO.getMessageType())) {
             sendEvent(MY_INFO);
-        } else if (messageText.equals(CURRENCY_LIST)) {
+        } else if (messageText.equals(CURRENCY_LIST.getMessageType())) {
             sendEvent(CURRENCY_LIST);
         } else {
             sendAnswer("Please enter a valid request.");
         }
     }
 
-    private void sendEvent(String messageType) {
+    private void sendEvent(TgMessageType messageType) {
         TgDataDto tgDataDto = TgDataDto.builder()
                 .messageType(messageType)
                 .build();
@@ -83,8 +84,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         List<KeyboardRow> keyboardRowList = new ArrayList<>();
         KeyboardRow keyboardRow = new KeyboardRow();
-        keyboardRow.add(new KeyboardButton(MY_INFO));
-        keyboardRow.add(new KeyboardButton(CURRENCY_LIST));
+        keyboardRow.add(new KeyboardButton(MY_INFO.getMessageType()));
+        keyboardRow.add(new KeyboardButton(CURRENCY_LIST.getMessageType()));
         keyboardRowList.add(keyboardRow);
         replyKeyboardMarkup.setKeyboard(keyboardRowList);
     }

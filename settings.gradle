@@ -1,3 +1,5 @@
 rootProject.name = 'crypto-info'
+
 include 'crypto-service'
 include 'telegram-service'
+include 'shared'
