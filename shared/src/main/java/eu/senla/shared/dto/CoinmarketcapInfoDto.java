@@ -1,6 +1,5 @@
 package eu.senla.shared.dto;
 
-import eu.senla.shared.enums.TgMessageType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class TgDataDto {
+public class CoinmarketcapInfoDto {
 
-    private TgMessageType messageType;
-    private String messageText;
+    private String price;
 }

@@ -1,4 +1,4 @@
-package eu.senla.cryptoservice.configuration;
+package eu.senla.shared.configuration;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

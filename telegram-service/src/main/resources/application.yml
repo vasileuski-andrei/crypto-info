@@ -17,17 +17,15 @@ spring:
       group-id: telegram-service
       bootstrap-servers: ${BOOTSTRAP_SERVERS}
       auto-offset-reset: earliest
-      key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       properties:
         spring.json.trusted.packages: '*'
-        spring.json.value.default.type: eu.senla.shared.dto.ExmoInfoDto
-        spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
-        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
     topics:
       topic-tg-message: ${TOPIC_TG_MESSAGE}
       topic-exmo-user-info: ${TOPIC_EXMO_USER_INFO}
       topic-exmo-currency-list: ${TOPIC_EXMO_CURRENCY_LIST}
+      topic-coinmarketcap-price-conversion: ${TOPIC_COINMARKETCAP.PRICE-CONVERSION}
   telegram:
     botname: ${TG_BOTNAME}
     bottoken: ${TG_BOTTOKEN}

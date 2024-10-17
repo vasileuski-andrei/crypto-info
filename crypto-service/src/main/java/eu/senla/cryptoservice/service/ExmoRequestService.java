@@ -22,11 +22,9 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class ExmoRequestService {
 
-    private final WebClient webClient;
+    private final WebClient exmoWebClient;
     private final ObjectMapper objectMapper;
 
-    @Value("${exmo.base-url}")
-    private String exmoBaseUrl;
     @Value("${exmo.api-version}")
     private String exmoApiVersion;
 
@@ -43,9 +41,9 @@ public class ExmoRequestService {
     public ExmoInfoEntity getUserInfo() {
         String body = ExmoUtil.getBody();
         String sign = ExmoUtil.getSign(exmoSecretKey, body);
-        String response = webClient
+        String response = exmoWebClient
                 .post()
-                .uri(prepareUri(exmoUserInfoUrn))
+                .uri(exmoApiVersion + exmoUserInfoUrn)
                 .contentType(MediaType.valueOf(MediaType.APPLICATION_FORM_URLENCODED_VALUE))
                 .header("Key", exmoApiKey)
                 .header("Sign", sign)
@@ -57,9 +55,9 @@ public class ExmoRequestService {
     }
 
     public ExmoInfoDto getCurrencyList() {
-        List<CurrencyDto> currencyDtos = webClient
+        List<CurrencyDto> currencyDtos = exmoWebClient
                 .get()
-                .uri(prepareUri(exmoCurrencyListUrn))
+                .uri(exmoApiVersion + exmoCurrencyListUrn)
                 .retrieve().bodyToFlux(CurrencyDto.class)
                 .collectList()
                 .block();
@@ -67,10 +65,6 @@ public class ExmoRequestService {
         return ExmoInfoDto.builder()
                 .currencyList(currencyDtos)
                 .build();
-    }
-
-    private String prepareUri(String uri) {
-        return exmoBaseUrl + exmoApiVersion + uri;
     }
 
     @SneakyThrows

@@ -3,12 +3,15 @@ package eu.senla.cryptoservice.service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import eu.senla.cryptoservice.entity.CoinmarketcapCurrencyEntity;
+import eu.senla.shared.dto.CoinmarketcapInfoDto;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
@@ -18,28 +21,72 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class CoinmarketcapRequestService {
 
-    private final WebClient webClient;
+    private static final String API_KEY_HEADER = "X-CMC_PRO_API_KEY";
+    private static final String DATA = "data";
+    private static final String QUOTE = "quote";
+
+    private final WebClient coinmarketcapWebClient;
     private final ObjectMapper objectMapper;
 
-    @Value("${coinmarketcap.uri}")
-    private String coinmarketcapUri;
+    @Value("${coinmarketcap.api-version}")
+    private String coinmarketcapApiVersion;
+
+    @Value("${coinmarketcap.cryptocurrency-latest-urn}")
+    private String coinmarketcapCryptocurrencyLatestUrn;
+    @Value("${coinmarketcap.price-conversion-urn}")
+    private String coinmarketcapPriceConversionUrn;
+
     @Value("${coinmarketcap.api-key}")
     private String coinmarketcapApiKey;
     @Value("${coinmarketcap.cryptocurrency}")
     private String cryptocurrency;
 
     public List<CoinmarketcapCurrencyEntity> getCoinmarketcapCrypto() {
-        String response = webClient
+        String response = coinmarketcapWebClient
                 .get()
-                .uri(coinmarketcapUri + cryptocurrency)
-                .header("X-CMC_PRO_API_KEY", coinmarketcapApiKey)
+                .uri(uriBuilder -> uriBuilder
+                        .path(coinmarketcapApiVersion + coinmarketcapCryptocurrencyLatestUrn)
+                        .queryParam("symbol", cryptocurrency)
+                        .build())
+                .header(API_KEY_HEADER, coinmarketcapApiKey)
                 .retrieve().bodyToMono(String.class)
                 .block();
 
-        return extractCoinmarketcapDataFromJson(response);
+        return extractCryptocurrencyLatest(response);
     }
 
-    private List<CoinmarketcapCurrencyEntity> extractCoinmarketcapDataFromJson(String json) {
+    public CoinmarketcapInfoDto getConvertedPrice(String messageText) {
+        String[] params = messageText.split("\s");
+        String amount = params[0];
+        String from = params[1].toUpperCase();
+        String to = params[2].toUpperCase();
+        String response = coinmarketcapWebClient
+                .get()
+                .uri(uriBuilder -> uriBuilder
+                        .path(coinmarketcapApiVersion + coinmarketcapPriceConversionUrn)
+                        .queryParam("amount", amount)
+                        .queryParam("symbol", from)
+                        .queryParam("convert", to)
+                        .build())
+                .header(API_KEY_HEADER, coinmarketcapApiKey)
+                .retrieve().bodyToMono(String.class)
+                .block();
+
+        return extractConvertedPrice(response, to);
+    }
+
+    @SneakyThrows
+    private CoinmarketcapInfoDto extractConvertedPrice(String response, String toCurrency) {
+        JsonNode jsonNode = objectMapper.readTree(response);
+        BigDecimal convertedPrice = jsonNode.get(DATA).get(0).get(QUOTE).get(toCurrency).get("price")
+                .decimalValue().setScale(2, RoundingMode.HALF_UP);
+
+        return CoinmarketcapInfoDto.builder()
+                .price(String.format("%s %s",convertedPrice, toCurrency))
+                .build();
+    }
+
+    private List<CoinmarketcapCurrencyEntity> extractCryptocurrencyLatest(String json) {
         return Arrays.stream(cryptocurrency.split(","))
                 .map(cryptocurrency -> {
                     JsonNode cryptoData = getCryptoData(json, cryptocurrency);
@@ -50,7 +97,7 @@ public class CoinmarketcapRequestService {
     @SneakyThrows
     private JsonNode getCryptoData(String json, String cryptocurrency) {
         JsonNode jsonNode = objectMapper.readTree(json);
-        return jsonNode.get("data").get(cryptocurrency).get(0).get("quote").get("USD");
+        return jsonNode.get(DATA).get(cryptocurrency).get(0).get(QUOTE).get("USD");
     }
 
     private CoinmarketcapCurrencyEntity buildCoinmarketcapCurrencyEntity(JsonNode cryptoData, String cryptocurrency) {

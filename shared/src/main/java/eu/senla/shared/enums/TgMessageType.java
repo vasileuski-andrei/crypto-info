@@ -8,7 +8,8 @@ import lombok.Getter;
 public enum TgMessageType {
 
     MY_INFO("My info"),
-    CURRENCY_LIST("Currency list");
+    CURRENCY_LIST("Currency list"),
+    CONVERSION("Conversion");
 
-    private String messageType;
+    private final String messageType;
 }
