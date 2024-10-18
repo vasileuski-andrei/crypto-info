@@ -5,7 +5,6 @@ import eu.senla.shared.dto.CoinmarketcapInfoDto;
 import eu.senla.shared.dto.ExmoInfoDto;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +21,7 @@ public class KafkaService {
     @KafkaListener(topics = "${spring.kafka.topics.topic-exmo-user-info}")
     public void exmoUserInfoListener(String data) {
         ExmoInfoDto exmoInfoDto = objectMapper.readValue(data, ExmoInfoDto.class);
-        StringBuilder response = new StringBuilder(StringUtils.EMPTY);
+        StringBuilder response = new StringBuilder();
         for (String currency : exmoInfoDto.getBalances()) {
             String formattedCurrency = currencyFormatting(currency);
             response.append(formattedCurrency);

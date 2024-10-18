@@ -20,6 +20,7 @@ subprojects {
 	dependencies {
 		implementation 'org.springframework.boot:spring-boot-starter-web'
 		implementation "org.springframework.kafka:spring-kafka:${versions.kafka}"
+		testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	}
 
 	tasks.named('test') {
