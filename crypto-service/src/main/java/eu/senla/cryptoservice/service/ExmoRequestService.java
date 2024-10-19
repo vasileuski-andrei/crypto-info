@@ -48,7 +48,8 @@ public class ExmoRequestService {
                 .header("Key", exmoApiKey)
                 .header("Sign", sign)
                 .bodyValue(body)
-                .retrieve().bodyToMono(String.class)
+                .retrieve()
+                .bodyToMono(String.class)
                 .block();
 
         return extractExmoDataFromJson(response);
@@ -58,7 +59,8 @@ public class ExmoRequestService {
         List<CurrencyDto> currencyDtos = exmoWebClient
                 .get()
                 .uri(exmoApiVersion + exmoCurrencyListUrn)
-                .retrieve().bodyToFlux(CurrencyDto.class)
+                .retrieve()
+                .bodyToFlux(CurrencyDto.class)
                 .collectList()
                 .block();
 
