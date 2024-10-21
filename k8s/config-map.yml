@@ -8,8 +8,17 @@ data:
   kafka: kafka:9092
   topic-tg-message: TG.MESSAGE
   topic-exmo-user-info: EXMO.USER-INFO
+  topic-exmo-currency-list: EXMO.CURRENCY-LIST
+  topic-coinmarketcap-price-conversion: COINMARKETCAP.PRICE-CONVERSION
   quartz-cron-schedule: 0/30 * * * * ?
-  coinmarketcap-uri: https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=
+
+  coinmarketcap-base-url: https://pro-api.coinmarketcap.com
+  coinmarketcap-api-version: /v2
+  cryptocurrency-latest-urn: /cryptocurrency/quotes/latest
+  coinmarketcap-price-conversion-urn: /tools/price-conversion
   coinmarketcap-cryptocurrency: BTC,ETH,BNB,XRP,DOGE,TRX,TON,SHIB,PEPE,FLOKI,TURBO
-  exmo-uri: https://api.exmo.com/v1.1/user_info
+  exmo-base-url: https://api.exmo.com
+  exmo-api-version: /v1.1
+  exmo-user-info-urn: /user_info
+  exmo-currency-list-urn: /currency/list/extended
   tg-botname: CryptoExchangeInfoBot

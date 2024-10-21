@@ -64,31 +64,71 @@ spec:
                 configMapKeyRef:
                   name: crypto-info-config
                   key: topic-exmo-user-info
+            - name: TOPIC_EXMO_CURRENCY_LIST
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: topic-exmo-currency-list
+            - name: TOPIC_COINMARKETCAP_PRICE_CONVERSION
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: topic-coinmarketcap-price-conversion
             - name: QUARTZ_CRON_SCHEDULE
               valueFrom:
                 configMapKeyRef:
                   name: crypto-info-config
                   key: quartz-cron-schedule
-            - name: COINMARKETCAP_URI
+            - name: COINMARKETCAP_BASE_URL
               valueFrom:
                 configMapKeyRef:
                   name: crypto-info-config
-                  key: coinmarketcap-uri
+                  key: coinmarketcap-base-url
+            - name: COINMARKETCAP_API_VERSION
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: coinmarketcap-api-version
+            - name: COINMARKETCAP_CRYPTOCURRENCY_LATEST_URN
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: cryptocurrency-latest-urn
+            - name: COINMARKETCAP_PRICE_CONVERSION_URN
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: coinmarketcap-price-conversion-urn
             - name: COINMARKETCAP_CRYPTOCURRENCY
               valueFrom:
                 configMapKeyRef:
                   name: crypto-info-config
                   key: coinmarketcap-cryptocurrency
-            - name: EXMO_URI
-              valueFrom:
-                configMapKeyRef:
-                  name: crypto-info-config
-                  key: exmo-uri
             - name: COINMARKETCAP_API_KEY
               valueFrom:
                 secretKeyRef:
                   name: crypto-info-secret
                   key: coinmarketcap-api-key
+            - name: EXMO_BASE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: exmo-base-url
+            - name: EXMO_API_VERSION
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: exmo-api-version
+            - name: EXMO_USER_INFO_URN
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: exmo-user-info-urn
+            - name: EXMO_CURRENCY_LIST_URN
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: exmo-currency-list-urn
             - name: EXMO_API_KEY
               valueFrom:
                 secretKeyRef:

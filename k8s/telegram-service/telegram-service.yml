@@ -52,6 +52,16 @@ spec:
                 configMapKeyRef:
                   name: crypto-info-config
                   key: topic-exmo-user-info
+            - name: TOPIC_EXMO_CURRENCY_LIST
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: topic-exmo-currency-list
+            - name: TOPIC_COINMARKETCAP_PRICE_CONVERSION
+              valueFrom:
+                configMapKeyRef:
+                  name: crypto-info-config
+                  key: topic-coinmarketcap-price-conversion
             - name: TG_BOTNAME
               valueFrom:
                 configMapKeyRef:
