@@ -4,6 +4,7 @@ ext {
             'mapstruct' : '1.5.3.Final',
             'kafka' : '3.2.4',
             'telegram' : '6.9.0',
-            'commonscodec' : '1.17.1'
+            'commonscodec' : '1.17.1',
+            'mapstruct' : '1.5.5.Final',
     ]
 }

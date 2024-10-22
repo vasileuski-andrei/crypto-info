@@ -5,6 +5,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-graphql'
     implementation "org.springframework.boot:spring-boot-starter-data-mongodb:${versions.mongodb}"
     implementation "commons-codec:commons-codec:${versions.commonscodec}"
+    implementation "org.mapstruct:mapstruct:${versions.mapstruct}"
+    annotationProcessor "org.mapstruct:mapstruct-processor:${versions.mapstruct}"
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

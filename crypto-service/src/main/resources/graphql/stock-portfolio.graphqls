@@ -1,0 +1,9 @@
+type Mutation {
+   addStock(stockPortfolioDto: StockPortfolioDto!): Boolean
+}
+
+input StockPortfolioDto {
+   currency: String!
+   stockExchange: String!
+   amount: String!
+}
