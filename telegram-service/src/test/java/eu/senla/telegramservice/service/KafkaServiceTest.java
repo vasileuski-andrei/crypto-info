@@ -3,6 +3,7 @@ package eu.senla.telegramservice.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import eu.senla.shared.dto.CurrencyDto;
 import eu.senla.shared.dto.ExmoInfoDto;
+import eu.senla.telegramservice.consumer.KafkaConsumer;
 import lombok.SneakyThrows;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
@@ -32,7 +33,7 @@ class KafkaServiceTest {
     private ObjectMapper objectMapper;
 
     @InjectMocks
-    private KafkaService kafkaService;
+    private KafkaConsumer kafkaService;
 
     @Captor
     ArgumentCaptor<String> currenciesCaptor;

@@ -1,13 +1,15 @@
-package eu.senla.cryptoservice.service;
+package eu.senla.cryptoservice.api.impl;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import eu.senla.cryptoservice.entity.ExmoInfoEntity;
+import eu.senla.cryptoservice.api.ExmoRequestService;
 import eu.senla.cryptoservice.util.ExmoUtil;
 import eu.senla.shared.dto.CurrencyDto;
 import eu.senla.shared.dto.ExmoInfoDto;
+import eu.senla.shared.exception.CommonConversionException;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
@@ -20,7 +22,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class ExmoRequestService {
+public class ExmoRequestServiceImpl implements ExmoRequestService {
 
     private final WebClient exmoWebClient;
     private final ObjectMapper objectMapper;
@@ -38,6 +40,7 @@ public class ExmoRequestService {
     @Value("${exmo.s-key}")
     private String exmoSecretKey;
 
+    @Override
     public ExmoInfoEntity getUserInfo() {
         String body = ExmoUtil.getBody();
         String sign = ExmoUtil.getSign(exmoSecretKey, body);
@@ -55,6 +58,7 @@ public class ExmoRequestService {
         return extractExmoDataFromJson(response);
     }
 
+    @Override
     public ExmoInfoDto getCurrencyList() {
         List<CurrencyDto> currencyDtos = exmoWebClient
                 .get()
@@ -69,9 +73,13 @@ public class ExmoRequestService {
                 .build();
     }
 
-    @SneakyThrows
     private ExmoInfoEntity extractExmoDataFromJson(String json) {
-        JsonNode jsonNode = objectMapper.readTree(json);
+        JsonNode jsonNode = null;
+        try {
+            jsonNode = objectMapper.readTree(json);
+        } catch (JsonProcessingException e) {
+            throw new CommonConversionException("[ExmoRequestService.extractExmoDataFromJson]Error reading response tree");
+        }
         String[] balances = jsonNode.get("balances").toString().replace("}", "").split(",");
         List<String> notZeroBalances = Arrays.stream(balances)
                 .filter(currency -> !currency.matches(".+\"0\""))

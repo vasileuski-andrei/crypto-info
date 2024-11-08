@@ -8,6 +8,7 @@ import eu.senla.cryptoservice.service.StockPortfolioService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -20,12 +21,14 @@ public class StockPortfolioServiceImpl implements StockPortfolioService {
     private final StockPortfolioMapper stockPortfolioMapper;
 
     @Override
+    @Transactional(readOnly = true)
     public List<StockPortfolioDto> getAllStocks() {
         List<StockPortfolioEntity> stockPortfolioEntities = stockPortfolioRepository.findAll();
         return stockPortfolioMapper.toStockPortfolioDtos(stockPortfolioEntities);
     }
 
     @Override
+    @Transactional
     public void save(StockPortfolioDto stockPortfolioDto) {
         StockPortfolioEntity stockPortfolioEntity = stockPortfolioMapper.toStockPortfolioEntity(stockPortfolioDto);
         stockPortfolioRepository.save(stockPortfolioEntity);

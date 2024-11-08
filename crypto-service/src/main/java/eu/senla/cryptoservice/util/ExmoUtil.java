@@ -9,8 +9,6 @@ import javax.crypto.spec.SecretKeySpec;
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.HashMap;
-import java.util.Map;
 
 @Slf4j
 @UtilityClass
@@ -21,18 +19,7 @@ public class ExmoUtil {
     private static long nonce;
 
     public static String getBody() {
-        Map<String, String> arguments = new HashMap<>();
-        arguments.put("nonce", String.valueOf(++nonce));
-        String postData = "";
-
-        for (Map.Entry<String, String> argumentsEntry : arguments.entrySet()) {
-            if (postData.length() > 0) {
-                postData += "&";
-            }
-            postData += argumentsEntry.getKey() + "=" + argumentsEntry.getValue();
-        }
-
-        return postData;
+        return String.format("nonce=%s", ++nonce);
     }
 
     public static String getSign(String apiSecret, String body) {

@@ -1,6 +1,9 @@
-package eu.senla.cryptoservice.service;
+package eu.senla.cryptoservice.consumer;
 
 import eu.senla.cryptoservice.entity.ExmoInfoEntity;
+import eu.senla.cryptoservice.api.impl.CoinmarketcapRequestServiceImpl;
+import eu.senla.cryptoservice.api.impl.ExmoRequestServiceImpl;
+import eu.senla.cryptoservice.service.ExmoService;
 import eu.senla.shared.dto.CoinmarketcapInfoDto;
 import eu.senla.shared.dto.ExmoInfoDto;
 import eu.senla.shared.dto.TgDataDto;
@@ -15,10 +18,10 @@ import static eu.senla.shared.enums.TgMessageType.*;
 
 @Service
 @RequiredArgsConstructor
-public class KafkaService {
+public class KafkaConsumer {
 
-    private final CoinmarketcapRequestService coinmarketcapRequestService;
-    private final ExmoRequestService exmoRequestService;
+    private final CoinmarketcapRequestServiceImpl coinmarketcapRequestService;
+    private final ExmoRequestServiceImpl exmoRequestService;
     private final ExmoService exmoService;
     private final KafkaTemplate<String, Object> kafkaTemplate;
 

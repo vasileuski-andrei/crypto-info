@@ -17,15 +17,15 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static eu.senla.shared.enums.TgMessageType.CURRENCY_LIST;
-import static eu.senla.shared.enums.TgMessageType.MY_INFO;
-import static eu.senla.shared.enums.TgMessageType.CONVERSION;
+import static eu.senla.shared.enums.TgMessageType.*;
 
 @Slf4j
 public class TelegramBot extends TelegramLongPollingBot {
 
+    private static final String CONVERSION_REGEX = "\\d+\\s[A-Za-z]+\\s[A-Za-z]+";
+
     private final KafkaTemplate<String, Object> kafkaTemplate;
-    private String botName;
+    private final String botName;
     private Message message;
 
     @Value("${spring.kafka.topics.topic-tg-message}")
@@ -51,7 +51,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             sendEvent(CURRENCY_LIST, messageText);
         } else if (messageText.equals(CONVERSION.getMessageType())) {
             sendAnswer("Please enter: <amount> <from> <to>. Example: 1 btc usd");
-        } else if (messageText.matches("\\d+\\s[A-Za-z]+\\s[A-Za-z]+")) {
+        } else if (messageText.matches(CONVERSION_REGEX)) {
             sendEvent(CONVERSION, messageText);
         } else {
             sendAnswer("Please enter a valid request.");

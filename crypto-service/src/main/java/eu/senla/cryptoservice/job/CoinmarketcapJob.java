@@ -2,7 +2,7 @@ package eu.senla.cryptoservice.job;
 
 import eu.senla.cryptoservice.entity.CoinmarketcapCurrencyEntity;
 import eu.senla.cryptoservice.service.CoinmarketcapCurrencyService;
-import eu.senla.cryptoservice.service.CoinmarketcapRequestService;
+import eu.senla.cryptoservice.api.impl.CoinmarketcapRequestServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
@@ -14,7 +14,7 @@ import java.util.List;
 @DisallowConcurrentExecution
 public class CoinmarketcapJob implements Job {
 
-    private final CoinmarketcapRequestService requestService;
+    private final CoinmarketcapRequestServiceImpl requestService;
     private final CoinmarketcapCurrencyService coinmarketcapCurrencyService;
 
     @Override

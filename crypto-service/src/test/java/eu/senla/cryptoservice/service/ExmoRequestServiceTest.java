@@ -2,6 +2,7 @@ package eu.senla.cryptoservice.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import eu.senla.cryptoservice.entity.ExmoInfoEntity;
+import eu.senla.cryptoservice.api.impl.ExmoRequestServiceImpl;
 import eu.senla.shared.dto.CurrencyDto;
 import eu.senla.shared.dto.ExmoInfoDto;
 import lombok.SneakyThrows;
@@ -46,7 +47,7 @@ class ExmoRequestServiceTest {
     private ObjectMapper objectMapper;
 
     @InjectMocks
-    private ExmoRequestService exmoRequestService;
+    private ExmoRequestServiceImpl exmoRequestService;
 
     @BeforeEach
     void setUp() {

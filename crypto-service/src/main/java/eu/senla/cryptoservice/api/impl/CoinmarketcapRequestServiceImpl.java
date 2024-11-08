@@ -1,11 +1,13 @@
-package eu.senla.cryptoservice.service;
+package eu.senla.cryptoservice.api.impl;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import eu.senla.cryptoservice.entity.CoinmarketcapCurrencyEntity;
+import eu.senla.cryptoservice.api.CoinmarketcapRequestService;
 import eu.senla.shared.dto.CoinmarketcapInfoDto;
+import eu.senla.shared.exception.CommonConversionException;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -19,7 +21,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class CoinmarketcapRequestService {
+public class CoinmarketcapRequestServiceImpl implements CoinmarketcapRequestService {
 
     private static final String API_KEY_HEADER = "X-CMC_PRO_API_KEY";
     private static final String DATA = "data";
@@ -41,6 +43,7 @@ public class CoinmarketcapRequestService {
     @Value("${coinmarketcap.cryptocurrency}")
     private String cryptocurrency;
 
+    @Override
     public List<CoinmarketcapCurrencyEntity> getCoinmarketcapCrypto() {
         String response = coinmarketcapWebClient
                 .get()
@@ -55,6 +58,7 @@ public class CoinmarketcapRequestService {
         return extractCryptocurrencyLatest(response);
     }
 
+    @Override
     public CoinmarketcapInfoDto getConvertedPrice(String messageText) {
         String[] params = messageText.split("\s");
         String amount = params[0];
@@ -75,9 +79,13 @@ public class CoinmarketcapRequestService {
         return extractConvertedPrice(response, to);
     }
 
-    @SneakyThrows
     private CoinmarketcapInfoDto extractConvertedPrice(String response, String toCurrency) {
-        JsonNode jsonNode = objectMapper.readTree(response);
+        JsonNode jsonNode = null;
+        try {
+            jsonNode = objectMapper.readTree(response);
+        } catch (JsonProcessingException e) {
+            throw new CommonConversionException("[CoinmarketcapRequestService.extractConvertedPrice]Error reading response tree");
+        }
         BigDecimal convertedPrice = jsonNode.get(DATA).get(0).get(QUOTE).get(toCurrency).get("price")
                 .decimalValue().setScale(2, RoundingMode.HALF_UP);
 
@@ -94,9 +102,13 @@ public class CoinmarketcapRequestService {
                 }).collect(Collectors.toList());
     }
 
-    @SneakyThrows
     private JsonNode getCryptoData(String json, String cryptocurrency) {
-        JsonNode jsonNode = objectMapper.readTree(json);
+        JsonNode jsonNode = null;
+        try {
+            jsonNode = objectMapper.readTree(json);
+        } catch (JsonProcessingException e) {
+            throw new CommonConversionException("[CoinmarketcapRequestService.getCryptoData]Error reading response tree");
+        }
         return jsonNode.get(DATA).get(cryptocurrency).get(0).get(QUOTE).get("USD");
     }
 
