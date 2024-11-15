@@ -16,6 +16,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import static eu.senla.shared.enums.TgMessageType.*;
 
@@ -40,7 +41,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         message = update.getMessage();
-        String messageText = message.getText();
+        String messageText = message.getText().toLowerCase(Locale.ROOT);
         log.info("[TelegramBot.onUpdateReceived]Received tg message. Message: {}", messageText);
 
         if (messageText.equals("/start")) {
@@ -82,19 +83,23 @@ public class TelegramBot extends TelegramLongPollingBot {
     }
 
     private void setButtons(SendMessage sendMessage) {
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-        replyKeyboardMarkup.setOneTimeKeyboard(false);
-        replyKeyboardMarkup.setSelective(true);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-
         List<KeyboardRow> keyboardRowList = new ArrayList<>();
         KeyboardRow keyboardRow = new KeyboardRow();
         keyboardRow.add(new KeyboardButton(MY_INFO.getMessageType()));
         keyboardRow.add(new KeyboardButton(CURRENCY_LIST.getMessageType()));
         keyboardRow.add(new KeyboardButton(CONVERSION.getMessageType()));
         keyboardRowList.add(keyboardRow);
+        ReplyKeyboardMarkup replyKeyboardMarkup = buildReplyKeyboardMarkup();
         replyKeyboardMarkup.setKeyboard(keyboardRowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+    }
+
+    private ReplyKeyboardMarkup buildReplyKeyboardMarkup() {
+        return ReplyKeyboardMarkup.builder()
+                .oneTimeKeyboard(false)
+                .selective(true)
+                .resizeKeyboard(true)
+                .build();
     }
 
     @Override

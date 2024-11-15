@@ -1,5 +1,6 @@
 package eu.senla.cryptoservice.service.impl;
 
+import eu.senla.cryptoservice.api.ExmoRequestService;
 import eu.senla.cryptoservice.api.impl.ExmoRequestServiceImpl;
 import eu.senla.cryptoservice.entity.ExmoInfoEntity;
 import eu.senla.cryptoservice.repository.ExmoRepository;
@@ -13,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 public class ExmoServiceImpl implements ExmoService {
 
-    private final ExmoRequestServiceImpl exmoRequestService;
+    private final ExmoRequestService exmoRequestService;
     private final ExmoRepository exmoRepository;
 
     @Override

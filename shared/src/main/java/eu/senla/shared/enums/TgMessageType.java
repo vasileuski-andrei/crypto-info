@@ -7,9 +7,9 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum TgMessageType {
 
-    MY_INFO("My info"),
-    CURRENCY_LIST("Currency list"),
-    CONVERSION("Conversion");
+    MY_INFO("my info"),
+    CURRENCY_LIST("currency list"),
+    CONVERSION("conversion");
 
     private final String messageType;
 }

@@ -1,0 +1,4293 @@
+{
+  "status": {
+    "timestamp": "2024-10-20T17:23:13.341Z",
+    "error_code": 0,
+    "error_message": null,
+    "elapsed": 852,
+    "credit_count": 1,
+    "notice": null
+  },
+  "data": {
+    "BNB": [
+      {
+        "id": 1839,
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb",
+        "num_market_pairs": 2264,
+        "date_added": "2017-07-25T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "marketplace",
+            "name": "Marketplace",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "centralized-exchange",
+            "name": "Centralized Exchange (CEX) Token",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "payments",
+            "name": "Payments",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "smart-contracts",
+            "name": "Smart Contracts",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "alameda-research-portfolio",
+            "name": "Alameda Research Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "multicoin-capital-portfolio",
+            "name": "Multicoin Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "bnb-chain",
+            "name": "BNB Chain",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "layer-1",
+            "name": "Layer 1",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "sec-security-token",
+            "name": "SEC Security Token",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "alleged-sec-securities",
+            "name": "Alleged SEC Securities",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "celsius-bankruptcy-estate",
+            "name": "Celsius Bankruptcy Estate",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 145656641.52750897,
+        "total_supply": 145656641.52750897,
+        "is_active": 1,
+        "infinite_supply": false,
+        "platform": null,
+        "cmc_rank": 4,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 598.8353750044329,
+            "volume_24h": 1495013320.854029,
+            "volume_change_24h": 2.2713,
+            "percent_change_1h": 0.03456952,
+            "percent_change_24h": 0.3476569,
+            "percent_change_7d": 4.84844442,
+            "percent_change_30d": 5.55507135,
+            "percent_change_60d": 7.62421945,
+            "percent_change_90d": 0.96652889,
+            "market_cap": 87224349551.01208,
+            "market_cap_dominance": 3.6933,
+            "fully_diluted_market_cap": 87224349551.01,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      }
+    ],
+    "BTC": [
+      {
+        "id": 1,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "slug": "bitcoin",
+        "num_market_pairs": 11779,
+        "date_added": "2010-07-13T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "mineable",
+            "name": "Mineable",
+            "category": "OTHERS"
+          },
+          {
+            "slug": "pow",
+            "name": "PoW",
+            "category": "ALGORITHM"
+          },
+          {
+            "slug": "sha-256",
+            "name": "SHA-256",
+            "category": "ALGORITHM"
+          },
+          {
+            "slug": "store-of-value",
+            "name": "Store Of Value",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "state-channel",
+            "name": "State Channel",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "coinbase-ventures-portfolio",
+            "name": "Coinbase Ventures Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "three-arrows-capital-portfolio",
+            "name": "Three Arrows Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "polychain-capital-portfolio",
+            "name": "Polychain Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "binance-labs-portfolio",
+            "name": "Binance Labs Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "blockchain-capital-portfolio",
+            "name": "Blockchain Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "boostvc-portfolio",
+            "name": "BoostVC Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "cms-holdings-portfolio",
+            "name": "CMS Holdings Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "dcg-portfolio",
+            "name": "DCG Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "dragonfly-capital-portfolio",
+            "name": "DragonFly Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "electric-capital-portfolio",
+            "name": "Electric Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "fabric-ventures-portfolio",
+            "name": "Fabric Ventures Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "framework-ventures-portfolio",
+            "name": "Framework Ventures Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "galaxy-digital-portfolio",
+            "name": "Galaxy Digital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "huobi-capital-portfolio",
+            "name": "Huobi Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "alameda-research-portfolio",
+            "name": "Alameda Research Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "a16z-portfolio",
+            "name": "a16z Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "1confirmation-portfolio",
+            "name": "1Confirmation Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "winklevoss-capital-portfolio",
+            "name": "Winklevoss Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "usv-portfolio",
+            "name": "USV Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "placeholder-ventures-portfolio",
+            "name": "Placeholder Ventures Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "pantera-capital-portfolio",
+            "name": "Pantera Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "multicoin-capital-portfolio",
+            "name": "Multicoin Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "paradigm-portfolio",
+            "name": "Paradigm Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "bitcoin-ecosystem",
+            "name": "Bitcoin Ecosystem",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "ftx-bankruptcy-estate",
+            "name": "FTX Bankruptcy Estate ",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 21000000,
+        "circulating_supply": 19770450,
+        "total_supply": 19770450,
+        "is_active": 1,
+        "infinite_supply": false,
+        "platform": null,
+        "cmc_rank": 1,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 68526.82465651637,
+            "volume_24h": 15136302489.478542,
+            "volume_change_24h": -16.6236,
+            "percent_change_1h": -0.06582751,
+            "percent_change_24h": 0.6110673,
+            "percent_change_7d": 9.2214737,
+            "percent_change_30d": 8.90696204,
+            "percent_change_60d": 14.38183009,
+            "percent_change_90d": 1.91490483,
+            "market_cap": 1354806160530.424,
+            "market_cap_dominance": 57.3663,
+            "fully_diluted_market_cap": 1439063317786.84,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31652,
+        "name": "batcat",
+        "symbol": "BTC",
+        "slug": "batcat",
+        "num_market_pairs": 4,
+        "date_added": "2024-06-06T09:25:57.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "solana-ecosystem",
+            "name": "Solana Ecosystem",
+            "category": "PLATFORM"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 1000000000,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "EtBc6gkCvsB9c6f5wSbwG8wPjRqXMB5euptK6bqG1R4X"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 4377,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 999939377,
+        "self_reported_market_cap": 181309.08176684804,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.00018132007393369012,
+            "volume_24h": 24152.57681314,
+            "volume_change_24h": -84.0467,
+            "percent_change_1h": 0.97980234,
+            "percent_change_24h": -15.39874104,
+            "percent_change_7d": -34.62649861,
+            "percent_change_30d": 171.44935841,
+            "percent_change_60d": 119.33329885,
+            "percent_change_90d": -4.77749223,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 181320.07,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 32295,
+        "name": "Bullish Trump Coin",
+        "symbol": "BTC",
+        "slug": "bullish-trump-coin",
+        "num_market_pairs": 1,
+        "date_added": "2024-07-19T09:39:13.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "political-memes",
+            "name": "Political Memes",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 420690000000,
+        "circulating_supply": 0,
+        "total_supply": 420690000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x43FD9De06bb69aD771556E171f960A91c42D2955"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 5398,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000,
+        "self_reported_market_cap": 72073.75794487348,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 1.713227268175461e-7,
+            "volume_24h": 2645.70417558,
+            "volume_change_24h": -26.8227,
+            "percent_change_1h": 0,
+            "percent_change_24h": -12.0525525,
+            "percent_change_7d": 74.26499078,
+            "percent_change_30d": 44.12774347,
+            "percent_change_60d": 256.4267151,
+            "percent_change_90d": -87.07091279,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 72073.76,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 30938,
+        "name": "Satoshi Pumpomoto",
+        "symbol": "BTC",
+        "slug": "satoshi-pumpomoto",
+        "num_market_pairs": 2,
+        "date_added": "2024-04-26T06:54:08.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 21000000,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "6AGNtEgBE2jph1bWFdyaqsXJ762emaP9RE17kKxEsfiV"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 9542,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 21000000,
+        "self_reported_market_cap": 5961.221032311687,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.0002838676682053184,
+            "volume_24h": 0,
+            "volume_change_24h": -100,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 28.21880455,
+            "percent_change_30d": 37.53243922,
+            "percent_change_60d": 8.00352048,
+            "percent_change_90d": -25.94661498,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 5961.22,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31469,
+        "name": "Boost Trump Campaign",
+        "symbol": "BTC",
+        "slug": "boost-trump-campaign",
+        "num_market_pairs": 2,
+        "date_added": "2024-05-27T11:52:59.000Z",
+        "tags": [],
+        "max_supply": 420690000000,
+        "circulating_supply": 0,
+        "total_supply": 420690000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x300e0d87f8c95d90cfe4b809baa3a6c90e83b850"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 9585,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000,
+        "self_reported_market_cap": 85077.08256090489,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 2.022322436019513e-7,
+            "volume_24h": 0,
+            "volume_change_24h": -100,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 28.28565012,
+            "percent_change_30d": 57.83384496,
+            "percent_change_60d": 43.33168967,
+            "percent_change_90d": -49.41068754,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 85077.08,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      }
+    ],
+    "DOGE": [
+      {
+        "id": 74,
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "slug": "dogecoin",
+        "num_market_pairs": 1084,
+        "date_added": "2013-12-15T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "mineable",
+            "name": "Mineable",
+            "category": "OTHERS"
+          },
+          {
+            "slug": "pow",
+            "name": "PoW",
+            "category": "ALGORITHM"
+          },
+          {
+            "slug": "scrypt",
+            "name": "Scrypt",
+            "category": "ALGORITHM"
+          },
+          {
+            "slug": "medium-of-exchange",
+            "name": "Medium of Exchange",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "payments",
+            "name": "Payments",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "bnb-chain",
+            "name": "BNB Chain",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "ftx-bankruptcy-estate",
+            "name": "FTX Bankruptcy Estate ",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 146447946383.7052,
+        "total_supply": 146447946383.7052,
+        "is_active": 1,
+        "infinite_supply": true,
+        "platform": null,
+        "cmc_rank": 8,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.14180800326234988,
+            "volume_24h": 1508001166.5476027,
+            "volume_change_24h": -21.2127,
+            "percent_change_1h": 1.9827349,
+            "percent_change_24h": -0.1681821,
+            "percent_change_7d": 28.09835056,
+            "percent_change_30d": 35.55109714,
+            "percent_change_60d": 35.73263054,
+            "percent_change_90d": 2.23626762,
+            "market_cap": 20767490858.544907,
+            "market_cap_dominance": 0.8794,
+            "fully_diluted_market_cap": 20767490858.54,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 32778,
+        "name": "Department Of Government Efficiency (dogegov.com)",
+        "symbol": "DOGE",
+        "slug": "department-of-government-efficiency-token",
+        "num_market_pairs": 17,
+        "date_added": "2024-08-21T13:37:59.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 1000000000,
+        "circulating_supply": 979133700.9712416,
+        "total_supply": 979133700.9712416,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x1121AcC14c63f3C872BFcA497d10926A6098AAc5"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 682,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1000000000,
+        "self_reported_market_cap": 33369235.46688295,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.03336923546688295,
+            "volume_24h": 3920648.48857211,
+            "volume_change_24h": -26.3482,
+            "percent_change_1h": 0.26115037,
+            "percent_change_24h": -25.66657171,
+            "percent_change_7d": 200.06393934,
+            "percent_change_30d": 157.96746759,
+            "percent_change_60d": 9490.27254233,
+            "percent_change_90d": 5853.06781245,
+            "market_cap": 32672943.02126992,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 33369235.47,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 32756,
+        "name": "Department Of Government Efficiency (DOGE)",
+        "symbol": "DOGE",
+        "slug": "department-of-government-efficiency",
+        "num_market_pairs": 4,
+        "date_added": "2024-08-20T11:02:56.000Z",
+        "tags": [
+          {
+            "slug": "ethereum-ecosystem",
+            "name": "Ethereum Ecosystem",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "solana-ecosystem",
+            "name": "Solana Ecosystem",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "political-memes",
+            "name": "Political Memes",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 1000000000,
+        "circulating_supply": 0,
+        "total_supply": 1000000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x81FcC294d91bd8FFC8a822d7df0e2fD2f8526c39"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 3232,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 500000000,
+        "self_reported_market_cap": 96982.94191985983,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.00019396588383971966,
+            "volume_24h": 291731.83846159,
+            "volume_change_24h": -1.4998,
+            "percent_change_1h": -0.04770362,
+            "percent_change_24h": 1.99411168,
+            "percent_change_7d": 9.32130535,
+            "percent_change_30d": 11.34125567,
+            "percent_change_60d": -57.97178237,
+            "percent_change_90d": -49.82960004,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 193965.88,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31093,
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "slug": "doge-on-base",
+        "num_market_pairs": 4,
+        "date_added": "2024-05-06T10:08:55.000Z",
+        "tags": [],
+        "max_supply": 1000000000,
+        "circulating_supply": 0,
+        "total_supply": 1000000000,
+        "platform": {
+          "id": 27716,
+          "name": "Base",
+          "symbol": "TBA",
+          "slug": "base",
+          "token_address": "0x80e3ee7bab68feaea6e01c44df9daa5de53e4818"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 5016,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1000000000,
+        "self_reported_market_cap": 207146.72861546237,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.00020714672861546238,
+            "volume_24h": 5860.44240371,
+            "volume_change_24h": 15.8601,
+            "percent_change_1h": -0.00184557,
+            "percent_change_24h": -4.02717168,
+            "percent_change_7d": 6.93477851,
+            "percent_change_30d": 3.14282682,
+            "percent_change_60d": 5.57448856,
+            "percent_change_90d": -45.03763199,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 207146.73,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 33007,
+        "name": "Department Of Government Efficiency (dogedepartment.com)",
+        "symbol": "DOGE",
+        "slug": "department-of-government-efficiency-dogedepartment",
+        "num_market_pairs": 3,
+        "date_added": "2024-09-13T01:58:02.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 420000000000,
+        "circulating_supply": 0,
+        "total_supply": 420000000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xA4fb6e1781fBCc921DF51352aF4CC83FF6c1308f"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 5795,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420000000000,
+        "self_reported_market_cap": 62406.035062599076,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 1.4858579776809303e-7,
+            "volume_24h": 1239.51074594,
+            "volume_change_24h": -60.6785,
+            "percent_change_1h": -0.12264422,
+            "percent_change_24h": 13.39113402,
+            "percent_change_7d": 67.99830719,
+            "percent_change_30d": -31.67071418,
+            "percent_change_60d": -99.40700519,
+            "percent_change_90d": -99.40700519,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 62406.04,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 27134,
+        "name": "Doge on Pulsechain",
+        "symbol": "DOGE",
+        "slug": "doge-on-pulsechain",
+        "num_market_pairs": 7,
+        "date_added": "2023-06-21T11:56:32.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 100000000000000,
+        "platform": {
+          "id": 11145,
+          "name": "PulseChain",
+          "symbol": "PLS",
+          "slug": "pulsechain",
+          "token_address": "0x9cc7437978255e2c38b0d3d4671fb9ac411a68ac"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 6141,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 100000000000000,
+        "self_reported_market_cap": 232933.4607400221,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 2.329334607400221e-9,
+            "volume_24h": 633.00496248,
+            "volume_change_24h": 15.6194,
+            "percent_change_1h": -0.79387872,
+            "percent_change_24h": 3.13184186,
+            "percent_change_7d": -4.02707231,
+            "percent_change_30d": 28.61027612,
+            "percent_change_60d": 114.69149283,
+            "percent_change_90d": 56.32115826,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 232933.46,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 33019,
+        "name": "Department Of Government Efficiency (doge.ong)",
+        "symbol": "DOGE",
+        "slug": "department-of-government-efficiency-eth",
+        "num_market_pairs": 4,
+        "date_added": "2024-09-14T12:26:13.000Z",
+        "tags": [],
+        "max_supply": 420690000000,
+        "circulating_supply": 0,
+        "total_supply": 420690000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xD09e5d8607f2541E13c3F014C360f0EE2A25Eb80"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 6565,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000,
+        "self_reported_market_cap": 34095.81246034949,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 8.104735662922695e-8,
+            "volume_24h": 287.66578831,
+            "volume_change_24h": -36.4495,
+            "percent_change_1h": -0.25122647,
+            "percent_change_24h": -8.0773653,
+            "percent_change_7d": -15.67324712,
+            "percent_change_30d": 16.35766752,
+            "percent_change_60d": -99.55285946,
+            "percent_change_90d": -99.55285946,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 34095.81,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 30548,
+        "name": "MOON DOGE",
+        "symbol": "DOGE",
+        "slug": "moon-doge",
+        "num_market_pairs": 1,
+        "date_added": "2024-04-11T11:55:02.000Z",
+        "tags": [],
+        "max_supply": 99976731748945810,
+        "circulating_supply": 0,
+        "total_supply": 99976731748945810,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x6F8dEB41aD9c9E25B2674A9eD083afc4F529Bc11"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7466,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 99976731748945810,
+        "self_reported_market_cap": 9787.582253954719,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 9.7898601832e-14,
+            "volume_24h": 31.90336617,
+            "volume_change_24h": -6.8038,
+            "percent_change_1h": 0.00000187,
+            "percent_change_24h": -1.70679025,
+            "percent_change_7d": 11.91249739,
+            "percent_change_30d": 522.25994713,
+            "percent_change_60d": 497.20779609,
+            "percent_change_90d": 325.75401431,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 9787.58,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 29096,
+        "name": "ELON DOGE",
+        "symbol": "DOGE",
+        "slug": "elon-doge-token",
+        "num_market_pairs": 1,
+        "date_added": "2024-01-19T08:22:50.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "binance-smart-chain",
+            "name": "BNB Smart Chain",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 99967247609349470,
+        "circulating_supply": 0,
+        "total_supply": 99967247609349470,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x765275f72c061C0e1ae037e5d0e5CE4785091Cf1"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7617,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 99967247609349470,
+        "self_reported_market_cap": 1982.8290918983387,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 1.9834787286e-14,
+            "volume_24h": 19.83788576,
+            "volume_change_24h": 65.8037,
+            "percent_change_1h": -0.00001369,
+            "percent_change_24h": -2.41139053,
+            "percent_change_7d": 2.79797628,
+            "percent_change_30d": 4.59923737,
+            "percent_change_60d": 7.49152299,
+            "percent_change_90d": -22.9523407,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 1982.83,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 28438,
+        "name": "DOGECOIN X",
+        "symbol": "DOGE",
+        "slug": "dogecoin-x",
+        "num_market_pairs": 1,
+        "date_added": "2023-11-17T09:17:43.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 143514536383,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xdAC581adD4C3AE3b95dbb736B10dd7DCAEa399b3"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7619,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 7.62e-22,
+            "volume_24h": 19.82697188,
+            "volume_change_24h": 65.7602,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 0,
+            "percent_change_30d": 0,
+            "percent_change_60d": 0,
+            "percent_change_90d": 0,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 0,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 28384,
+        "name": "DOGE SATELLITE INU",
+        "symbol": "DOGE",
+        "slug": "doge-satellite-inu",
+        "num_market_pairs": 1,
+        "date_added": "2023-11-13T02:14:21.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 999651425447668100,
+        "circulating_supply": 0,
+        "total_supply": 999651425447668100,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x044F2BC015A9742E4eA9494a3c4B99a0B177205F"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7686,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 999651425447668100,
+        "self_reported_market_cap": 0.00032488671327049213,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 3.25e-22,
+            "volume_24h": 15.84646666,
+            "volume_change_24h": 13.5184,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 0,
+            "percent_change_30d": 0,
+            "percent_change_60d": 0,
+            "percent_change_90d": 0,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 0,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 28872,
+        "name": "SPACE DOGE",
+        "symbol": "DOGE",
+        "slug": "space-doge",
+        "num_market_pairs": 1,
+        "date_added": "2023-12-29T05:41:08.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 99990319976151380,
+        "circulating_supply": 0,
+        "total_supply": 99990319976151380,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x2603a2F40Cd0dC2f6a6FB02A0c0768108b9F5F46"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7763,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 99990319976151380,
+        "self_reported_market_cap": 6458.397044602956,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 6.4590222795e-14,
+            "volume_24h": 11.95351857,
+            "volume_change_24h": 22.2077,
+            "percent_change_1h": 0.00000433,
+            "percent_change_24h": 0.5789503,
+            "percent_change_7d": 9.74244645,
+            "percent_change_30d": 146.36442201,
+            "percent_change_60d": -35.93336816,
+            "percent_change_90d": -44.02254656,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 6458.4,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 30852,
+        "name": "WHALES DOGE",
+        "symbol": "DOGE",
+        "slug": "whales-doge",
+        "num_market_pairs": 1,
+        "date_added": "2024-04-23T13:39:55.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 99988201183568370,
+        "circulating_supply": 0,
+        "total_supply": 99988201183568370,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x0AeE21B4a1F322E84ab29F58Af8350D0eE968399"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7769,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 99988201183568370,
+        "self_reported_market_cap": 2551.5246604646095,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 2.5518257457e-14,
+            "volume_24h": 11.94979362,
+            "volume_change_24h": 21.1703,
+            "percent_change_1h": -0.00000997,
+            "percent_change_24h": 0.57978215,
+            "percent_change_7d": 5.28033197,
+            "percent_change_30d": 2.49897457,
+            "percent_change_60d": 5.28580511,
+            "percent_change_90d": -15.77382322,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 2551.52,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 29403,
+        "name": "SUPER DOGE",
+        "symbol": "DOGE",
+        "slug": "super-doge",
+        "num_market_pairs": 2,
+        "date_added": "2024-02-15T03:49:30.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "binance-smart-chain",
+            "name": "BNB Smart Chain",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 999496,
+        "circulating_supply": 0,
+        "total_supply": 999496,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xD2f1635AC07E1eA4c68d954E120C272B8380F038"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7822,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 999496,
+        "self_reported_market_cap": 1915.3859360628792,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.001916351777358668,
+            "volume_24h": 9.86851371,
+            "volume_change_24h": -17.5125,
+            "percent_change_1h": 0,
+            "percent_change_24h": -0.37642795,
+            "percent_change_7d": 5.13303263,
+            "percent_change_30d": 6.20366779,
+            "percent_change_60d": 4.82248252,
+            "percent_change_90d": -4.66025104,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 1915.39,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 27301,
+        "name": "DOGE 2.0",
+        "symbol": "DOGE",
+        "slug": "doge-2-0",
+        "num_market_pairs": 1,
+        "date_added": "2023-06-29T09:42:12.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 100000000,
+        "circulating_supply": 0,
+        "total_supply": 0,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xF016F07c9B0787a18C81dC562F32FFE70003cA3B"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 78310000,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2023-08-13T18:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": -0.06289495,
+            "percent_change_30d": 6.84260075,
+            "percent_change_60d": -89.87068363,
+            "percent_change_90d": -89.87068363,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 12279.67,
+            "tvl": null,
+            "last_updated": "2023-08-13T18:30:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31751,
+        "name": "DOGE SOL INU",
+        "symbol": "DOGE",
+        "slug": "doge-sol-inu",
+        "num_market_pairs": 2,
+        "date_added": "2024-06-11T07:27:31.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 9999929396,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "EYDUWfdirDPddpSdH7YfBTRePZReSg9V4FM8SkUbMBm8"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 9999929396,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2024-09-07T01:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 0,
+            "percent_change_30d": -20.29446592,
+            "percent_change_60d": -52.27423267,
+            "percent_change_90d": -89.8352983,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 1974,
+            "tvl": null,
+            "last_updated": "2024-09-07T01:30:00.000Z"
+          }
+        }
+      }
+    ],
+    "ETH": [
+      {
+        "id": 1027,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum",
+        "num_market_pairs": 9435,
+        "date_added": "2015-08-07T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "pos",
+            "name": "PoS",
+            "category": "ALGORITHM"
+          },
+          {
+            "slug": "smart-contracts",
+            "name": "Smart Contracts",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "ethereum-ecosystem",
+            "name": "Ethereum Ecosystem",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "coinbase-ventures-portfolio",
+            "name": "Coinbase Ventures Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "three-arrows-capital-portfolio",
+            "name": "Three Arrows Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "polychain-capital-portfolio",
+            "name": "Polychain Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "binance-labs-portfolio",
+            "name": "Binance Labs Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "blockchain-capital-portfolio",
+            "name": "Blockchain Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "boostvc-portfolio",
+            "name": "BoostVC Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "cms-holdings-portfolio",
+            "name": "CMS Holdings Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "dcg-portfolio",
+            "name": "DCG Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "dragonfly-capital-portfolio",
+            "name": "DragonFly Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "electric-capital-portfolio",
+            "name": "Electric Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "fabric-ventures-portfolio",
+            "name": "Fabric Ventures Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "framework-ventures-portfolio",
+            "name": "Framework Ventures Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "hashkey-capital-portfolio",
+            "name": "Hashkey Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "kenetic-capital-portfolio",
+            "name": "Kenetic Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "huobi-capital-portfolio",
+            "name": "Huobi Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "alameda-research-portfolio",
+            "name": "Alameda Research Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "a16z-portfolio",
+            "name": "a16z Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "1confirmation-portfolio",
+            "name": "1Confirmation Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "winklevoss-capital-portfolio",
+            "name": "Winklevoss Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "usv-portfolio",
+            "name": "USV Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "placeholder-ventures-portfolio",
+            "name": "Placeholder Ventures Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "pantera-capital-portfolio",
+            "name": "Pantera Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "multicoin-capital-portfolio",
+            "name": "Multicoin Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "paradigm-portfolio",
+            "name": "Paradigm Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "layer-1",
+            "name": "Layer 1",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "ftx-bankruptcy-estate",
+            "name": "FTX Bankruptcy Estate ",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 120389492.16828275,
+        "total_supply": 120389492.16828275,
+        "is_active": 1,
+        "infinite_supply": true,
+        "platform": null,
+        "cmc_rank": 2,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:20:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 2693.1126489857415,
+            "volume_24h": 11273014333.523352,
+            "volume_change_24h": 9.3313,
+            "percent_change_1h": -0.12761355,
+            "percent_change_24h": 1.97966568,
+            "percent_change_7d": 9.60386861,
+            "percent_change_30d": 5.72215653,
+            "percent_change_60d": 3.12357164,
+            "percent_change_90d": -22.16686846,
+            "market_cap": 324222464163.37213,
+            "market_cap_dominance": 13.7273,
+            "fully_diluted_market_cap": 324222464163.37,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:20:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 29991,
+        "name": "The Infinite Garden",
+        "symbol": "ETH",
+        "slug": "the-infinite-garden",
+        "num_market_pairs": 3,
+        "date_added": "2024-03-20T07:20:55.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 10000000,
+        "circulating_supply": 0,
+        "total_supply": 10000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x5e21d1ee5cf0077b314c381720273ae82378d613"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 6766,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 10000000,
+        "self_reported_market_cap": 54373.09966383875,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:20:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.005437309966383875,
+            "volume_24h": 187.67995935,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 5.35203485,
+            "percent_change_7d": 9.82703991,
+            "percent_change_30d": -50.02063251,
+            "percent_change_60d": 16.94526166,
+            "percent_change_90d": -44.12387219,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 54373.1,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:20:00.000Z"
+          }
+        }
+      }
+    ],
+    "FLOKI": [
+      {
+        "id": 10804,
+        "name": "FLOKI",
+        "symbol": "FLOKI",
+        "slug": "floki-inu",
+        "num_market_pairs": 550,
+        "date_added": "2021-07-09T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "gaming",
+            "name": "Gaming",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "metaverse",
+            "name": "Metaverse",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "play-to-earn",
+            "name": "Play To Earn",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "bnb-chain",
+            "name": "BNB Chain",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "dwf-labs-portfolio",
+            "name": "DWF Labs Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "paal-ecosystem",
+            "name": "Paal Ecosystem",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "tokenfi-launchpad",
+            "name": "TokenFi Launchpad",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 9596138428022.002,
+        "total_supply": 9683861193967.682,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xcf0c122c6b73ff809c693db761e7baebe62b6a2e"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 55,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 9317621738535.4,
+        "self_reported_market_cap": 1447263076.0398238,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.0001553253734323962,
+            "volume_24h": 140779103.95938218,
+            "volume_change_24h": -41.7016,
+            "percent_change_1h": 0.36287397,
+            "percent_change_24h": -1.86914968,
+            "percent_change_7d": 14.51551325,
+            "percent_change_30d": 16.87951569,
+            "percent_change_60d": 25.86648299,
+            "percent_change_90d": -20.82602808,
+            "market_cap": 1490523784.8414848,
+            "market_cap_dominance": 0.0631,
+            "fully_diluted_market_cap": 1504149356.22,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 10901,
+        "name": "Shiba Floki Inu",
+        "symbol": "FLOKI",
+        "slug": "shiba-floki",
+        "num_market_pairs": 2,
+        "date_added": "2021-07-15T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "bnb-chain",
+            "name": "BNB Chain",
+            "category": "PLATFORM"
+          }
+        ],
+        "max_supply": 1000000000000000,
+        "circulating_supply": 0,
+        "total_supply": 1000000000000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x4aadad81487c3fadd9f162b851e6a61b729200cb"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7120,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1000000000000000,
+        "self_reported_market_cap": 430944.410383221,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 4.30944410383221e-10,
+            "volume_24h": 87.42306381,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 731.5054049,
+            "percent_change_7d": 220.89609991,
+            "percent_change_30d": 248.47072587,
+            "percent_change_60d": 102.72151722,
+            "percent_change_90d": 43.83728643,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 430944.41,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 30253,
+        "name": "CRAZY FLOKI",
+        "symbol": "FLOKI",
+        "slug": "crazy-floki",
+        "num_market_pairs": 1,
+        "date_added": "2024-04-01T08:53:56.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 99989937159252640,
+        "circulating_supply": 0,
+        "total_supply": 99989937159252640,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x7Cea2ECba159f793C6eC302a5883fA0d3F018899"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7793,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 99989937159252640,
+        "self_reported_market_cap": 2465.8897843656923,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 2.4661379479e-14,
+            "volume_24h": 10.8981882,
+            "volume_change_24h": -8.847,
+            "percent_change_1h": -0.00000211,
+            "percent_change_24h": -0.05835893,
+            "percent_change_7d": 5.38848389,
+            "percent_change_30d": 28.38510608,
+            "percent_change_60d": 25.77510812,
+            "percent_change_90d": -0.57118185,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 2465.89,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 29860,
+        "name": "SUPER FLOKI",
+        "symbol": "FLOKI",
+        "slug": "super-floki-xyz",
+        "num_market_pairs": 1,
+        "date_added": "2024-03-14T10:57:05.000Z",
+        "tags": [],
+        "max_supply": 99964469631427650,
+        "circulating_supply": 0,
+        "total_supply": 99964469631427650,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xE02b264915474eB711832BFB8fB6A765B2d36e68"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7818,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 99964469631427650,
+        "self_reported_market_cap": 2020.344360861798,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 2.0210624518e-14,
+            "volume_24h": 9.87751613,
+            "volume_change_24h": -17.3065,
+            "percent_change_1h": 0.00002235,
+            "percent_change_24h": -0.14059672,
+            "percent_change_7d": 4.02303217,
+            "percent_change_30d": -4.27760948,
+            "percent_change_60d": 2.68128844,
+            "percent_change_90d": -8.07983519,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 2020.34,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 13074,
+        "name": "Baby Moon Floki",
+        "symbol": "FLOKI",
+        "slug": "baby-moon-floki",
+        "num_market_pairs": 9,
+        "date_added": "2021-10-24T01:41:42.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 100000000000000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x54e87ed5a096f09d9665fd114002bddfc2084a7f"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 8316,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 100000000000000000,
+        "self_reported_market_cap": 253273.1398805,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 2.532731398805e-12,
+            "volume_24h": 0.01805868,
+            "volume_change_24h": 15956.441,
+            "percent_change_1h": -5e-8,
+            "percent_change_24h": 0.13037934,
+            "percent_change_7d": 1.97088712,
+            "percent_change_30d": 0.21478939,
+            "percent_change_60d": 2.0449153,
+            "percent_change_90d": -8.86459668,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 253273.14,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 15525,
+        "name": "Floki One",
+        "symbol": "floki",
+        "slug": "floki-one",
+        "num_market_pairs": 1,
+        "date_added": "2021-12-02T15:57:52.000Z",
+        "tags": [
+          {
+            "slug": "harmony-ecosystem",
+            "name": "Harmony Ecosystem",
+            "category": "PLATFORM"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 1000000000000000,
+        "platform": {
+          "id": 3945,
+          "name": "Harmony",
+          "symbol": "ONE",
+          "slug": "harmony",
+          "token_address": "0x24b6179e4062ed9baeace0e6081dbd55b6072380"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 992313896698360,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2022-06-29T18:28:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": -3e-8,
+            "percent_change_24h": -3e-8,
+            "percent_change_7d": -5.41697171,
+            "percent_change_30d": -62.11368322,
+            "percent_change_60d": -80.17932057,
+            "percent_change_90d": -92.0375978,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 12761.4,
+            "tvl": null,
+            "last_updated": "2022-06-29T18:28:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 16669,
+        "name": "Mars Floki Inu",
+        "symbol": "FLOKI",
+        "slug": "marsflkinu",
+        "num_market_pairs": 3,
+        "date_added": "2021-12-30T05:04:48.000Z",
+        "tags": [],
+        "max_supply": 1000000000000000,
+        "circulating_supply": 0,
+        "total_supply": 1000000000000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x2969FAC8eaBBB3CbDac56778323930BbC90E471C"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1000000000000000,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2022-02-02T14:27:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 2.75552174,
+            "percent_change_30d": 1754.44332437,
+            "percent_change_60d": 1073.96321488,
+            "percent_change_90d": 1073.96321488,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 6060861.89,
+            "tvl": null,
+            "last_updated": "2022-02-02T14:27:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 16703,
+        "name": "Floki Musk",
+        "symbol": "FLOKI",
+        "slug": "floki-musk",
+        "num_market_pairs": 2,
+        "date_added": "2021-12-31T05:30:03.000Z",
+        "tags": [],
+        "max_supply": 1000000000000,
+        "circulating_supply": 0,
+        "total_supply": 1000000000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x67cc621ab2d086a101cff3340df0a065ac75827c"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2023-06-05T18:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 1.10183386,
+            "percent_change_30d": -15.04693983,
+            "percent_change_60d": -26.91605059,
+            "percent_change_90d": -26.30223182,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 133728.13,
+            "tvl": null,
+            "last_updated": "2023-06-05T18:30:00.000Z"
+          }
+        }
+      }
+    ],
+    "PEPE": [
+      {
+        "id": 24478,
+        "name": "Pepe",
+        "symbol": "PEPE",
+        "slug": "pepe",
+        "num_market_pairs": 460,
+        "date_added": "2023-04-17T06:18:08.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 420690000000000,
+        "circulating_supply": 420689899999994.8,
+        "total_supply": 420689899999994.8,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x6982508145454ce325ddbe47a25d4ec3d2311933"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 24,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.000010482918381769569,
+            "volume_24h": 504862278.74156547,
+            "volume_change_24h": -21.6026,
+            "percent_change_1h": 0.6125636,
+            "percent_change_24h": 0.81567685,
+            "percent_change_7d": 9.13909342,
+            "percent_change_30d": 29.57216933,
+            "percent_change_60d": 34.93609286,
+            "percent_change_90d": -13.41406296,
+            "market_cap": 4410057885.734747,
+            "market_cap_dominance": 0.1867,
+            "fully_diluted_market_cap": 4410058934.03,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 24549,
+        "name": "Arbi Pepe",
+        "symbol": "PEPE",
+        "slug": "arbi-pepe",
+        "num_market_pairs": 69,
+        "date_added": "2023-04-19T11:44:02.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 100000000000,
+        "platform": {
+          "id": 11841,
+          "name": "Arbitrum",
+          "symbol": "ARB",
+          "slug": "arbitrum",
+          "token_address": "0xB85C6FBF780eB913dC34aA0B6F74D1e6A15c356f"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 2759,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.000010495970758688648,
+            "volume_24h": 5855537.37301472,
+            "volume_change_24h": -16.1412,
+            "percent_change_1h": 0.69073759,
+            "percent_change_24h": 1.19173256,
+            "percent_change_7d": 9.17317771,
+            "percent_change_30d": 29.87379616,
+            "percent_change_60d": 35.50931236,
+            "percent_change_90d": -13.18394043,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 1049597.08,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 32643,
+        "name": "MOG PEPE",
+        "symbol": "PEPE",
+        "slug": "mog-pepe",
+        "num_market_pairs": 1,
+        "date_added": "2024-08-13T12:12:13.000Z",
+        "tags": [
+          {
+            "slug": "binance-chain",
+            "name": "Binance Chain",
+            "category": "PLATFORM"
+          }
+        ],
+        "max_supply": 10000000000,
+        "circulating_supply": 0,
+        "total_supply": 10000000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xdce796806394E015b7BcF71d1558181A194fC62a"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 2894,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 10000000000,
+        "self_reported_market_cap": 18705119.571076274,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.0018705119571076276,
+            "volume_24h": 1218940.24431485,
+            "volume_change_24h": 67.3345,
+            "percent_change_1h": 17.0193302,
+            "percent_change_24h": 158.61584081,
+            "percent_change_7d": -83.00963077,
+            "percent_change_30d": -98.60768053,
+            "percent_change_60d": -56.10562112,
+            "percent_change_90d": 5878.47704975,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 18705119.57,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 33050,
+        "name": "Based Pepe",
+        "symbol": "PEPE",
+        "slug": "based-pepe",
+        "num_market_pairs": 3,
+        "date_added": "2024-09-17T13:05:26.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 420690000000000,
+        "platform": {
+          "id": 27716,
+          "name": "Base",
+          "symbol": "TBA",
+          "slug": "base",
+          "token_address": "0x52b492a33E447Cdb854c7FC19F1e57E8BfA1777D"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 3188,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000000,
+        "self_reported_market_cap": 18866872.612947494,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 4.484744731975443e-8,
+            "volume_24h": 338660.29468529,
+            "volume_change_24h": 35.3586,
+            "percent_change_1h": 4.94434752,
+            "percent_change_24h": 25.48854648,
+            "percent_change_7d": 72.02301611,
+            "percent_change_30d": 181.2838317,
+            "percent_change_60d": 347.942638,
+            "percent_change_90d": 347.942638,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 18866872.61,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 22454,
+        "name": "PepePAD",
+        "symbol": "PEPE",
+        "slug": "pepepad-vip",
+        "num_market_pairs": 104,
+        "date_added": "2022-10-31T04:08:33.000Z",
+        "tags": [],
+        "max_supply": 420000000000,
+        "circulating_supply": 0,
+        "total_supply": 420000000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xef00278d7eadf3b2c05267a2f185e468ad7eab7d"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 3334,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420000000000,
+        "self_reported_market_cap": 4430867.360253051,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.000010549684191078693,
+            "volume_24h": 209772.202691,
+            "volume_change_24h": -62.1658,
+            "percent_change_1h": 0.42371933,
+            "percent_change_24h": 1.48067301,
+            "percent_change_7d": 10.23302612,
+            "percent_change_30d": 29.32290267,
+            "percent_change_60d": 34.82800503,
+            "percent_change_90d": -13.02086794,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 4430867.36,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31616,
+        "name": "Pepe",
+        "symbol": "PEPE",
+        "slug": "pepe-solana",
+        "num_market_pairs": 15,
+        "date_added": "2024-06-04T07:52:02.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 1000000000,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 3406,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1000000000,
+        "self_reported_market_cap": 1905572.6325586222,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.0019055726325586221,
+            "volume_24h": 174655.10226794,
+            "volume_change_24h": 16.7207,
+            "percent_change_1h": 0.27486137,
+            "percent_change_24h": -2.25045558,
+            "percent_change_7d": -33.76114826,
+            "percent_change_30d": -64.36857859,
+            "percent_change_60d": -10.33218165,
+            "percent_change_90d": -38.61663546,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 1905572.63,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 27928,
+        "name": "Pepe Community",
+        "symbol": "PEPE",
+        "slug": "pepe-community",
+        "num_market_pairs": 16,
+        "date_added": "2023-08-27T03:21:38.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 1000000000,
+        "circulating_supply": 0,
+        "total_supply": 941933976,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xbe042e9d09cb588331ff911c2b46fd833a3e5bd6"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 4011,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 941933976,
+        "self_reported_market_cap": 465780.9582064138,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.0004944942746246302,
+            "volume_24h": 54203.21396947,
+            "volume_change_24h": -14.6271,
+            "percent_change_1h": 0.06261045,
+            "percent_change_24h": -1.59148692,
+            "percent_change_7d": 6.62056666,
+            "percent_change_30d": 1.81008883,
+            "percent_change_60d": -13.29638702,
+            "percent_change_90d": -30.36600682,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 494494.27,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 30890,
+        "name": "PEPE 0x69 ON BASE",
+        "symbol": "PEPE",
+        "slug": "pepe-0x69-on-base",
+        "num_market_pairs": 9,
+        "date_added": "2024-04-24T10:03:47.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 420690000000000,
+        "platform": {
+          "id": 27716,
+          "name": "Base",
+          "symbol": "TBA",
+          "slug": "base",
+          "token_address": "0x698dc45e4f10966f6d1d98e3bfd7071d8144c233"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 4282,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000000,
+        "self_reported_market_cap": 1590929.975311429,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 3.781715694006107e-9,
+            "volume_24h": 29402.50048094,
+            "volume_change_24h": -28.6971,
+            "percent_change_1h": 0.00634951,
+            "percent_change_24h": -1.2365962,
+            "percent_change_7d": -11.42164767,
+            "percent_change_30d": -45.59382179,
+            "percent_change_60d": -34.45348759,
+            "percent_change_90d": -72.17261025,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 1590929.98,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31147,
+        "name": "NEXT GEN PEPE",
+        "symbol": "PEPE",
+        "slug": "pepe-sol",
+        "num_market_pairs": 3,
+        "date_added": "2024-05-08T09:24:52.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 971463619.66,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "2Zaq3WyDJj2ZkMcuqUiTBfAXCjqZtqihxcwUdwv9dyHA"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 4330,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 971463619.66,
+        "self_reported_market_cap": 3922828.918012498,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.004038060549694531,
+            "volume_24h": 26839.85838188,
+            "volume_change_24h": 41.1775,
+            "percent_change_1h": 0.24494553,
+            "percent_change_24h": 0.34690879,
+            "percent_change_7d": 1.77059882,
+            "percent_change_30d": 16.00848604,
+            "percent_change_60d": -31.10497458,
+            "percent_change_90d": -56.26468717,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 3922828.92,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 23450,
+        "name": "PepeSol",
+        "symbol": "PEPE",
+        "slug": "pepesol",
+        "num_market_pairs": 28,
+        "date_added": "2023-02-08T09:58:59.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 998237475,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "F9CpWoyeBJfoRB8f2pBe2ZNPbPsEE76mWZWme3StsvHK"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 4514,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 639437844,
+        "self_reported_market_cap": 1931809.2435418277,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.0030211055877728556,
+            "volume_24h": 17537.48839049,
+            "volume_change_24h": -46.2904,
+            "percent_change_1h": -0.05122826,
+            "percent_change_24h": -9.60011855,
+            "percent_change_7d": -5.2846474,
+            "percent_change_30d": 120.36283702,
+            "percent_change_60d": 105.01819,
+            "percent_change_90d": 72.10993687,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 3015780.81,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 25359,
+        "name": "Pepe Coin",
+        "symbol": "PEPE",
+        "slug": "pepe-coin-bsc2",
+        "num_market_pairs": 20,
+        "date_added": "2023-05-17T19:03:54.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 420690000000000,
+        "circulating_supply": 0,
+        "total_supply": 420690000000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xb46584e0efdE3092e04010A13f2eAe62aDb3b9F0"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 4843,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000000,
+        "self_reported_market_cap": 493144.84595059307,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 1.172228591006663e-9,
+            "volume_24h": 8643.23774537,
+            "volume_change_24h": 157.6499,
+            "percent_change_1h": -2.57127929,
+            "percent_change_24h": -0.24273434,
+            "percent_change_7d": -0.57739605,
+            "percent_change_30d": 11.63748885,
+            "percent_change_60d": 53.26713412,
+            "percent_change_90d": -5.71936711,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 493144.85,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31587,
+        "name": "Pepe on Sol",
+        "symbol": "PEPE",
+        "slug": "pepe-on-sol",
+        "num_market_pairs": 2,
+        "date_added": "2024-06-03T11:25:34.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "solana-ecosystem",
+            "name": "Solana Ecosystem",
+            "category": "PLATFORM"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 420690000000000,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "ox698TZsZAN2miNQj1FQb48A58FZ546c4sWqq9Y9vmU"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 5744,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000000,
+        "self_reported_market_cap": 58199.293361683754,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 1.38342469185585e-10,
+            "volume_24h": 1358.33759015,
+            "volume_change_24h": 210.2408,
+            "percent_change_1h": -1.03476312,
+            "percent_change_24h": 2.73684289,
+            "percent_change_7d": 7.95273806,
+            "percent_change_30d": -12.35932525,
+            "percent_change_60d": -18.40952534,
+            "percent_change_90d": -66.28615664,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 58199.29,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 29084,
+        "name": "pepecoin on SOL",
+        "symbol": "PEPE",
+        "slug": "pepecoin-on-sol",
+        "num_market_pairs": 9,
+        "date_added": "2024-01-19T03:57:37.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "solana-ecosystem",
+            "name": "Solana Ecosystem",
+            "category": "PLATFORM"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 419792749.41,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "3tS6fbLh2P8tzxXuqCiHZpZhsxJpmrR3Xb9psmypnp69"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 6257,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 419792749.41,
+        "self_reported_market_cap": 90677.53738835629,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.00021600548726913345,
+            "volume_24h": 514.78720832,
+            "volume_change_24h": -60.0575,
+            "percent_change_1h": 0.31415859,
+            "percent_change_24h": 1.8119172,
+            "percent_change_7d": -4.81332888,
+            "percent_change_30d": -1.33444694,
+            "percent_change_60d": 8.10697799,
+            "percent_change_90d": -40.85413731,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 90677.54,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 32527,
+        "name": "Pepe of Solana",
+        "symbol": "PEPE",
+        "slug": "pepe-of-solana",
+        "num_market_pairs": 2,
+        "date_added": "2024-08-02T04:45:36.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 1000000000,
+        "circulating_supply": 0,
+        "total_supply": 1000000000,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "8nQtmv1ipzUg6VrafDUy38M122DQ8vXNEGJiZtUapepe"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 6490,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1000000000,
+        "self_reported_market_cap": 24110.880850708316,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.000024110880850708317,
+            "volume_24h": 343.76888773,
+            "volume_change_24h": 1408.7911,
+            "percent_change_1h": 0,
+            "percent_change_24h": -4.32071385,
+            "percent_change_7d": -17.09908221,
+            "percent_change_30d": -2.48961065,
+            "percent_change_60d": -27.36314048,
+            "percent_change_90d": -90.22402368,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 24110.88,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 30341,
+        "name": "Pepe",
+        "symbol": "PEPE",
+        "slug": "pepe-on-base",
+        "num_market_pairs": 7,
+        "date_added": "2024-04-03T09:16:34.000Z",
+        "tags": [],
+        "max_supply": 1000000000,
+        "circulating_supply": 0,
+        "total_supply": 1000000000,
+        "platform": {
+          "id": 27716,
+          "name": "Base",
+          "symbol": "TBA",
+          "slug": "base",
+          "token_address": "0x80f45eacf6537498ecc660e4e4a2d2f99e195cf4"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 6498,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1000000000,
+        "self_reported_market_cap": 158513.75475752683,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.00015851375475752681,
+            "volume_24h": 338.18210643,
+            "volume_change_24h": 218.0206,
+            "percent_change_1h": 0,
+            "percent_change_24h": 2.80596728,
+            "percent_change_7d": 9.32407876,
+            "percent_change_30d": -7.31706828,
+            "percent_change_60d": 1.64715703,
+            "percent_change_90d": -37.99793239,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 158513.75,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 25912,
+        "name": "PepeCoin",
+        "symbol": "PEPE",
+        "slug": "pepecoinbsc",
+        "num_market_pairs": 1,
+        "date_added": "2023-05-25T03:39:19.000Z",
+        "tags": [],
+        "max_supply": 420690000000000,
+        "circulating_supply": 0,
+        "total_supply": 420690000000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x43b9ce0394d9affc97501359646a410a48c21a11"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 6572,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 251269305793031,
+        "self_reported_market_cap": 99775.12424887868,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 3.97084410823592e-10,
+            "volume_24h": 281.11496107,
+            "volume_change_24h": -18.5336,
+            "percent_change_1h": 23.99567401,
+            "percent_change_24h": 33.78111283,
+            "percent_change_7d": 29.146752,
+            "percent_change_30d": 58.81510081,
+            "percent_change_60d": 35.13142554,
+            "percent_change_90d": 109.34186851,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 167049.44,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 25289,
+        "name": "Pepe Coin",
+        "symbol": "PEPE",
+        "slug": "pepe-coin",
+        "num_market_pairs": 2,
+        "date_added": "2023-05-15T09:47:15.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 420690000000000,
+        "circulating_supply": 0,
+        "total_supply": 420690000000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xfe1ef2b469846d1832b25095ff51b004f090e0c6"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7118,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000000,
+        "self_reported_market_cap": 153935.04883232652,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 3.6591088172366e-10,
+            "volume_24h": 87.73249514,
+            "volume_change_24h": -82.1204,
+            "percent_change_1h": 0,
+            "percent_change_24h": 2.71110542,
+            "percent_change_7d": 19.70908303,
+            "percent_change_30d": 2.92512662,
+            "percent_change_60d": 5.68522489,
+            "percent_change_90d": -26.67789175,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 153935.05,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 29783,
+        "name": "SUPER PEPE",
+        "symbol": "PEPE",
+        "slug": "super-pepe",
+        "num_market_pairs": 1,
+        "date_added": "2024-03-12T08:10:11.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 13056935023,
+        "circulating_supply": 0,
+        "total_supply": 13056935023,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x000c94565910eD59AB98Fc47Fe3b39ed5Acba34C"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7691,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 13056935023,
+        "self_reported_market_cap": 11765.253954444966,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 9.01073179403917e-7,
+            "volume_24h": 15.65529182,
+            "volume_change_24h": -98.98,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0.40037318,
+            "percent_change_7d": 236.92794307,
+            "percent_change_30d": 241.22795385,
+            "percent_change_60d": 257.80876166,
+            "percent_change_90d": 185.91208835,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 11765.25,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 32982,
+        "name": "SEXY PEPE",
+        "symbol": "PEPE",
+        "slug": "sexy-pepe",
+        "num_market_pairs": 1,
+        "date_added": "2024-09-10T15:31:58.000Z",
+        "tags": [],
+        "max_supply": 10000000,
+        "circulating_supply": 0,
+        "total_supply": 10000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xB2388648CB6D7BCDfb3A623B424660448d31C1b6"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 7773,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 10000000,
+        "self_reported_market_cap": 1574.1315473660309,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.00015741315473660308,
+            "volume_24h": 11.89717959,
+            "volume_change_24h": -79.9294,
+            "percent_change_1h": 0,
+            "percent_change_24h": -0.4181593,
+            "percent_change_7d": -0.62130023,
+            "percent_change_30d": -0.80099953,
+            "percent_change_60d": -77.5840593,
+            "percent_change_90d": -77.5840593,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 1574.13,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 10268,
+        "name": "PepeMoon",
+        "symbol": "PEPE",
+        "slug": "pepemoon",
+        "num_market_pairs": 1,
+        "date_added": "2021-06-03T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "bnb-chain",
+            "name": "BNB Chain",
+            "category": "PLATFORM"
+          }
+        ],
+        "max_supply": 75000000000,
+        "circulating_supply": 0,
+        "total_supply": 0,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xa5ac8f8e90762380cce6c16aba17ed6d2cf75888"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2021-10-11T09:48:02.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": -0.15653407,
+            "percent_change_24h": 0.25903261,
+            "percent_change_7d": -0.01762253,
+            "percent_change_30d": 3.02415206,
+            "percent_change_60d": 7.32732034,
+            "percent_change_90d": 32.12566946,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 578004.4,
+            "tvl": null,
+            "last_updated": "2021-10-11T09:48:02.000Z"
+          }
+        }
+      },
+      {
+        "id": 21379,
+        "name": "PEPEGOLD",
+        "symbol": "PEPE",
+        "slug": "pepegold",
+        "num_market_pairs": 1,
+        "date_added": "2022-08-15T05:40:15.000Z",
+        "tags": [],
+        "max_supply": 10000000000,
+        "circulating_supply": 0,
+        "total_supply": 10000000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x4a27e9aab8f8ba9de06766c8476ed1d16494e35f"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2022-12-11T18:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 1.90548541,
+            "percent_change_30d": 6.87281856,
+            "percent_change_60d": -38.74028669,
+            "percent_change_90d": -78.0000913,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 61956.57,
+            "tvl": null,
+            "last_updated": "2022-12-11T18:30:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 24764,
+        "name": "Tezos Pepe",
+        "symbol": "PEPE",
+        "slug": "tezos-pepe",
+        "num_market_pairs": null,
+        "date_added": "2023-04-27T10:23:25.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": null,
+        "total_supply": 639000000,
+        "platform": {
+          "id": 2011,
+          "name": "Tezos",
+          "symbol": "XTZ",
+          "slug": "tezos",
+          "token_address": "KT1MZg99PxMDEENwB4Fi64xkqAVh5d1rv8Z9"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:23:13.253Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": null,
+            "volume_change_24h": null,
+            "percent_change_1h": null,
+            "percent_change_24h": null,
+            "percent_change_7d": null,
+            "percent_change_30d": null,
+            "percent_change_60d": null,
+            "percent_change_90d": null,
+            "market_cap": null,
+            "market_cap_dominance": null,
+            "fully_diluted_market_cap": null,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:23:13.253Z"
+          }
+        }
+      },
+      {
+        "id": 25057,
+        "name": "PEPEBSC",
+        "symbol": "PEPE",
+        "slug": "pepebsc",
+        "num_market_pairs": 4,
+        "date_added": "2023-05-08T09:45:38.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 100000000,
+        "circulating_supply": 0,
+        "total_supply": 100000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x40ec0717680d4801fb618a6f6d2bab7c2bd313b9"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 75595561,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2024-06-18T01:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": -2.79182831,
+            "percent_change_30d": -44.59470823,
+            "percent_change_60d": -31.78883416,
+            "percent_change_90d": -95.27841954,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 150.07,
+            "tvl": null,
+            "last_updated": "2024-06-18T01:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 26796,
+        "name": "Pepe Coin",
+        "symbol": "PEPE",
+        "slug": "pepecoinbsc-xyz",
+        "num_market_pairs": 1,
+        "date_added": "2023-06-08T06:56:26.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 420690000000000,
+        "circulating_supply": 0,
+        "total_supply": 420690000000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xf940400f89b8ea896b67110a0dce492ff6326b10"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000000,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2023-09-16T18:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 1e-8,
+            "percent_change_24h": 1e-8,
+            "percent_change_7d": -1.18922522,
+            "percent_change_30d": -9.41331754,
+            "percent_change_60d": -29.86650424,
+            "percent_change_90d": -53.8772852,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 17649.76,
+            "tvl": null,
+            "last_updated": "2023-09-16T18:30:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 29973,
+        "name": "PEPE World",
+        "symbol": "PEPE",
+        "slug": "pepe-world",
+        "num_market_pairs": 1,
+        "date_added": "2024-03-19T14:03:29.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 420690000000000,
+        "circulating_supply": 0,
+        "total_supply": 420690000000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xb0847fe2a383c20e77d3cb4ca7b788baf5c61ce3"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 420690000000000,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2024-09-03T01:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": -100,
+            "percent_change_1h": 1e-8,
+            "percent_change_24h": 1e-8,
+            "percent_change_7d": 1e-8,
+            "percent_change_30d": -76.63380659,
+            "percent_change_60d": -74.46938211,
+            "percent_change_90d": -80.29961731,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 12853.99,
+            "tvl": null,
+            "last_updated": "2024-09-03T01:30:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31011,
+        "name": "PEPEBOMB",
+        "symbol": "PEPE",
+        "slug": "pepebomb",
+        "num_market_pairs": 3,
+        "date_added": "2024-05-02T02:04:12.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 3000000000,
+        "circulating_supply": 0,
+        "total_supply": 3000000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x8dba4bc68126bd186fbb62c976539d1558c9fe73"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 3000000000,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2024-09-19T01:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 0,
+            "percent_change_30d": -14.88733119,
+            "percent_change_60d": -37.6523783,
+            "percent_change_90d": -45.61273151,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 30614.32,
+            "tvl": null,
+            "last_updated": "2024-09-19T01:30:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31611,
+        "name": "Real Pepe",
+        "symbol": "PEPE",
+        "slug": "real-pepe",
+        "num_market_pairs": 2,
+        "date_added": "2024-06-04T06:36:54.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 600000000,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "6uyVSvseRD2tNpBgyQH29ojtVPH89uKJc94fMaKtpump"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 600000000,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2024-09-06T01:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 0,
+            "percent_change_30d": -19.12499723,
+            "percent_change_60d": -28.77599603,
+            "percent_change_90d": -92.51250101,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 7029.66,
+            "tvl": null,
+            "last_updated": "2024-09-06T01:30:00.000Z"
+          }
+        }
+      }
+    ],
+    "SHIB": [
+      {
+        "id": 5994,
+        "name": "Shiba Inu",
+        "symbol": "SHIB",
+        "slug": "shiba-inu",
+        "num_market_pairs": 888,
+        "date_added": "2020-08-01T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "ethereum-ecosystem",
+            "name": "Ethereum Ecosystem",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 589267101241399.4,
+        "total_supply": 589518338272581.1,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 13,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.000018901453498838763,
+            "volume_24h": 263316822.8775322,
+            "volume_change_24h": -41.3222,
+            "percent_change_1h": 0.98227492,
+            "percent_change_24h": -0.25795795,
+            "percent_change_7d": 8.48551833,
+            "percent_change_30d": 33.70952901,
+            "percent_change_60d": 37.32289351,
+            "percent_change_90d": 7.00537253,
+            "market_cap": 11138004712.509825,
+            "market_cap_dominance": 0.4716,
+            "fully_diluted_market_cap": 11142753457.57,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 29430,
+        "name": "Shibwifhat",
+        "symbol": "SHIB",
+        "slug": "shibwifhat",
+        "num_market_pairs": 7,
+        "date_added": "2024-02-16T05:03:27.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 982000000,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "F6qoefQq4iCBLoNZ34RjEqHjHkD8vtmoRSdw9Nd55J1k"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 3693,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 980500000,
+        "self_reported_market_cap": 2111762.9693303164,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.002153761314972276,
+            "volume_24h": 93698.37036518,
+            "volume_change_24h": 12.4987,
+            "percent_change_1h": -0.25823677,
+            "percent_change_24h": -4.89292463,
+            "percent_change_7d": 8.73936497,
+            "percent_change_30d": -6.39374933,
+            "percent_change_60d": 11.78948233,
+            "percent_change_90d": -44.8505985,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 2114993.61,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 30105,
+        "name": "ShibaInu On Solana",
+        "symbol": "SHIB",
+        "slug": "shibainu-on-solana",
+        "num_market_pairs": 3,
+        "date_added": "2024-03-25T11:57:12.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "solana-ecosystem",
+            "name": "Solana Ecosystem",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "doggone-doggerel",
+            "name": "Doggone Doggerel",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 4991618997.57,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "5MBBsoCVddAuF8XixvCcXNbHAw6WfpZ8WyTKMmczxxRN"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 5401,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 4991618997.57,
+        "self_reported_market_cap": 272219.2363260708,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.000054535259293345806,
+            "volume_24h": 2635.49056924,
+            "volume_change_24h": 13.8582,
+            "percent_change_1h": 0.66085304,
+            "percent_change_24h": 0.75974123,
+            "percent_change_7d": -10.101367,
+            "percent_change_30d": 20.3497325,
+            "percent_change_60d": 25.8205322,
+            "percent_change_90d": 4.2663574,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 272219.24,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31501,
+        "name": "SHIB ON SOLANA",
+        "symbol": "SHIB",
+        "slug": "shib-on-solana",
+        "num_market_pairs": 3,
+        "date_added": "2024-05-29T07:04:01.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 999985088,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "7wz31sC5z979UMtiqrtxsYYQ6bJzpjUTgPsZvXuZhso"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 6008,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 999985088,
+        "self_reported_market_cap": 22030.514685143855,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.000022030843209077788,
+            "volume_24h": 845.41411909,
+            "volume_change_24h": 55970.4552,
+            "percent_change_1h": 0,
+            "percent_change_24h": -5.86730401,
+            "percent_change_7d": -0.30354046,
+            "percent_change_30d": -8.94471956,
+            "percent_change_60d": -16.2258117,
+            "percent_change_90d": -60.58801398,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 22030.51,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 31287,
+        "name": "Shibsol",
+        "symbol": "SHIB",
+        "slug": "shib-sol",
+        "num_market_pairs": 2,
+        "date_added": "2024-05-16T12:28:19.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 99999999999,
+        "platform": {
+          "id": 5426,
+          "name": "Solana",
+          "symbol": "SOL",
+          "slug": "solana",
+          "token_address": "7BPAjesYS2FCY84gzBmMbukFQqC6rLgtYP9twMvji6Pr"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 9566,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 99999999999,
+        "self_reported_market_cap": 27208.270103105697,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:22:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 2.720827010337778e-7,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0.18133573,
+            "percent_change_7d": 3.53674773,
+            "percent_change_30d": -1.39036969,
+            "percent_change_60d": 9.72119909,
+            "percent_change_90d": -26.35685581,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 27208.27,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:22:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 27930,
+        "name": "NicCageWaluigiElmo42069Inu",
+        "symbol": "SHIB",
+        "slug": "niccagewaluigielmo42069inu",
+        "num_market_pairs": 3,
+        "date_added": "2023-08-28T01:35:34.000Z",
+        "tags": [],
+        "max_supply": 1000000000,
+        "circulating_supply": 0,
+        "total_supply": 985899999,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xfcaF0e4498E78d65526a507360F755178b804Ba8"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 928641840,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2024-07-17T01:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 48.96517262,
+            "percent_change_7d": 48.98052703,
+            "percent_change_30d": 150.67278789,
+            "percent_change_60d": 240.85710033,
+            "percent_change_90d": 114.78140602,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 198017.76,
+            "tvl": null,
+            "last_updated": "2024-07-17T01:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 30271,
+        "name": "Shibaqua",
+        "symbol": "SHIB",
+        "slug": "shibaqua",
+        "num_market_pairs": 3,
+        "date_added": "2024-04-01T09:54:12.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 346914631300,
+        "circulating_supply": 0,
+        "total_supply": 107543535703,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0xb455D798E8b07dBbF9D4609f7b7bdc574463D0b3"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 346914631300,
+        "self_reported_market_cap": 0,
+        "tvl_ratio": null,
+        "last_updated": "2024-09-29T01:30:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 0,
+            "percent_change_30d": -13.62811993,
+            "percent_change_60d": -75.41911975,
+            "percent_change_90d": -79.48058459,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 32034.94,
+            "tvl": null,
+            "last_updated": "2024-09-29T01:30:00.000Z"
+          }
+        }
+      }
+    ],
+    "TON": [
+      {
+        "id": 11419,
+        "name": "Toncoin",
+        "symbol": "TON",
+        "slug": "toncoin",
+        "num_market_pairs": 581,
+        "date_added": "2021-08-26T13:40:22.000Z",
+        "tags": [
+          {
+            "slug": "pos",
+            "name": "PoS",
+            "category": "ALGORITHM"
+          },
+          {
+            "slug": "layer-1",
+            "name": "Layer 1",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "ftx-bankruptcy-estate",
+            "name": "FTX Bankruptcy Estate ",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "dwf-labs-portfolio",
+            "name": "DWF Labs Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "toncoin-ecosystem",
+            "name": "Toncoin Ecosystem",
+            "category": "PLATFORM"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 2539417720.301828,
+        "total_supply": 5113548151.130675,
+        "is_active": 1,
+        "infinite_supply": true,
+        "platform": null,
+        "cmc_rank": 10,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 3414166606,
+        "self_reported_market_cap": 18088656578.15522,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 5.298117715276844,
+            "volume_24h": 110170752.5244008,
+            "volume_change_24h": 0.2802,
+            "percent_change_1h": 0.01478436,
+            "percent_change_24h": 1.33187589,
+            "percent_change_7d": 2.25917937,
+            "percent_change_30d": -5.0801963,
+            "percent_change_60d": -20.83139313,
+            "percent_change_90d": -23.76362746,
+            "market_cap": 13454134010.419054,
+            "market_cap_dominance": 0.5697,
+            "fully_diluted_market_cap": 27092180047.43,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 6731,
+        "name": "Tokamak Network",
+        "symbol": "TON",
+        "slug": "tokamak-network",
+        "num_market_pairs": 23,
+        "date_added": "2020-08-29T00:00:00.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 43841454,
+        "total_supply": 62739955,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x2be5e8c109e2197D077D13A82dAead6a9b3433C5"
+        },
+        "is_active": 1,
+        "infinite_supply": true,
+        "cmc_rank": 559,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 49480343.23930768,
+        "self_reported_market_cap": 58725885.0441326,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 1.1868528227484114,
+            "volume_24h": 8541780.86641324,
+            "volume_change_24h": 853.0317,
+            "percent_change_1h": 0.24660777,
+            "percent_change_24h": 2.00754797,
+            "percent_change_7d": 7.26077044,
+            "percent_change_30d": 5.59739908,
+            "percent_change_60d": 7.17070386,
+            "percent_change_90d": -2.89525359,
+            "market_cap": 52033353.43329463,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 74463092.69,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 6890,
+        "name": "TON Token",
+        "symbol": "TON",
+        "slug": "tontoken",
+        "num_market_pairs": 22,
+        "date_added": "2020-09-04T00:00:00.000Z",
+        "tags": [],
+        "max_supply": 5047558527.7,
+        "circulating_supply": 0,
+        "total_supply": 5047558527.7,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x6a6c2ada3ce053561c2fbc3ee211f23d9b8c520a"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 4647,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1221401180.73,
+        "self_reported_market_cap": 112105259.23447832,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.09178414185540242,
+            "volume_24h": 13243.42760647,
+            "volume_change_24h": -20.6767,
+            "percent_change_1h": -53.55089698,
+            "percent_change_24h": 90.93093071,
+            "percent_change_7d": 204.40144597,
+            "percent_change_30d": -24.04301304,
+            "percent_change_60d": 39.05931037,
+            "percent_change_90d": -42.30211267,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 463285827.93,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      }
+    ],
+    "TRX": [
+      {
+        "id": 1958,
+        "name": "TRON",
+        "symbol": "TRX",
+        "slug": "tron",
+        "num_market_pairs": 1054,
+        "date_added": "2017-09-13T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "media",
+            "name": "Media",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "payments",
+            "name": "Payments",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "tron-ecosystem",
+            "name": "TRON Ecosystem",
+            "category": "PLATFORM"
+          },
+          {
+            "slug": "layer-1",
+            "name": "Layer 1",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "dwf-labs-portfolio",
+            "name": "DWF Labs Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "sec-security-token",
+            "name": "SEC Security Token",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "alleged-sec-securities",
+            "name": "Alleged SEC Securities",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": null,
+        "circulating_supply": 86516453992.95601,
+        "total_supply": 86516461150.14189,
+        "is_active": 1,
+        "infinite_supply": true,
+        "platform": null,
+        "cmc_rank": 9,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 71659659264,
+        "self_reported_market_cap": 11230224528.825016,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.15671613072359106,
+            "volume_24h": 194260321.80980012,
+            "volume_change_24h": -17.7932,
+            "percent_change_1h": 0.05310042,
+            "percent_change_24h": -0.4549621,
+            "percent_change_7d": -3.78255319,
+            "percent_change_30d": 3.23689375,
+            "percent_change_60d": -2.78090017,
+            "percent_change_90d": 17.09380101,
+            "market_cap": 13558523913.701645,
+            "market_cap_dominance": 0.5741,
+            "fully_diluted_market_cap": 13558525035.35,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      }
+    ],
+    "TURBO": [
+      {
+        "id": 24911,
+        "name": "Turbo",
+        "symbol": "TURBO",
+        "slug": "turbo",
+        "num_market_pairs": 203,
+        "date_added": "2023-05-04T05:24:19.000Z",
+        "tags": [
+          {
+            "slug": "art",
+            "name": "Art",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "ai-big-data",
+            "name": "AI & Big Data",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "web3",
+            "name": "Web3",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "dwf-labs-portfolio",
+            "name": "DWF Labs Portfolio",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 69000000000,
+        "circulating_supply": 65300000000,
+        "total_supply": 69000000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0xa35923162c49cf95e6bf26623385eb431ad920d3"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 207,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 69000000000,
+        "self_reported_market_cap": 714829249.9437574,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.01035984420208344,
+            "volume_24h": 138752264.89142728,
+            "volume_change_24h": -38.8917,
+            "percent_change_1h": 0.34556167,
+            "percent_change_24h": -2.41623145,
+            "percent_change_7d": 15.28026412,
+            "percent_change_30d": 76.36091603,
+            "percent_change_60d": 157.31139994,
+            "percent_change_90d": 48.60854753,
+            "market_cap": 676497826.3960487,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 714829249.94,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 33367,
+        "name": "Turbo Browser",
+        "symbol": "TURBO",
+        "slug": "turbo-browser",
+        "num_market_pairs": 1,
+        "date_added": "2024-10-09T05:27:40.000Z",
+        "tags": [],
+        "max_supply": 1000000,
+        "circulating_supply": 0,
+        "total_supply": 1000000,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x78e927fcfb062599d8295163f0808a6fcda7db24"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 9716,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": 1000000,
+        "self_reported_market_cap": 14026.780991603358,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.01402678099160336,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": -20.8370969,
+            "percent_change_30d": -99.2254834,
+            "percent_change_60d": -99.2254834,
+            "percent_change_90d": -99.2254834,
+            "market_cap": 0,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 14026.78,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:21:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 1767,
+        "name": "TurboCoin",
+        "symbol": "TURBO",
+        "slug": "turbocoin",
+        "num_market_pairs": 0,
+        "date_added": "2017-07-01T00:00:00.000Z",
+        "tags": [],
+        "max_supply": null,
+        "circulating_supply": 0,
+        "total_supply": 0,
+        "is_active": 0,
+        "infinite_supply": false,
+        "platform": null,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2018-10-24T00:23:51.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": 0,
+            "percent_change_30d": 0,
+            "percent_change_60d": 0,
+            "percent_change_90d": 0,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 0,
+            "tvl": null,
+            "last_updated": "2018-10-24T00:23:51.000Z"
+          }
+        }
+      },
+      {
+        "id": 27706,
+        "name": "TurboDEX",
+        "symbol": "TURBO",
+        "slug": "turbodex",
+        "num_market_pairs": 3,
+        "date_added": "2023-07-28T09:06:10.000Z",
+        "tags": [],
+        "max_supply": 25000000,
+        "circulating_supply": 0,
+        "total_supply": 25000000,
+        "platform": {
+          "id": 1839,
+          "name": "BNB Smart Chain (BEP20)",
+          "symbol": "BNB",
+          "slug": "bnb",
+          "token_address": "0x9D0211C1B1A217A574cB55b0E9c367e56DEBEAe0"
+        },
+        "is_active": 0,
+        "infinite_supply": false,
+        "cmc_rank": null,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-07-02T01:21:00.000Z",
+        "quote": {
+          "USD": {
+            "price": null,
+            "volume_24h": 0,
+            "volume_change_24h": 0,
+            "percent_change_1h": 0,
+            "percent_change_24h": 0,
+            "percent_change_7d": -0.07066012,
+            "percent_change_30d": -49.28144255,
+            "percent_change_60d": -40.39729702,
+            "percent_change_90d": -50.25580156,
+            "market_cap": null,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 3387065.73,
+            "tvl": null,
+            "last_updated": "2024-07-02T01:21:00.000Z"
+          }
+        }
+      }
+    ],
+    "XRP": [
+      {
+        "id": 52,
+        "name": "XRP",
+        "symbol": "XRP",
+        "slug": "xrp",
+        "num_market_pairs": 1407,
+        "date_added": "2013-08-04T00:00:00.000Z",
+        "tags": [
+          {
+            "slug": "medium-of-exchange",
+            "name": "Medium of Exchange",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "enterprise-solutions",
+            "name": "Enterprise Solutions",
+            "category": "INDUSTRY"
+          },
+          {
+            "slug": "arrington-xrp-capital-portfolio",
+            "name": "Arrington XRP Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "galaxy-digital-portfolio",
+            "name": "Galaxy Digital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "a16z-portfolio",
+            "name": "a16z Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "pantera-capital-portfolio",
+            "name": "Pantera Capital Portfolio",
+            "category": "CATEGORY"
+          },
+          {
+            "slug": "ftx-bankruptcy-estate",
+            "name": "FTX Bankruptcy Estate ",
+            "category": "CATEGORY"
+          }
+        ],
+        "max_supply": 100000000000,
+        "circulating_supply": 56706436160,
+        "total_supply": 99987115141,
+        "is_active": 1,
+        "infinite_supply": false,
+        "platform": null,
+        "cmc_rank": 7,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:20:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.5442227513854322,
+            "volume_24h": 624836226.3896973,
+            "volume_change_24h": -2.9439,
+            "percent_change_1h": 0.02270442,
+            "percent_change_24h": 0.39239477,
+            "percent_change_7d": 2.62614466,
+            "percent_change_30d": -6.1623621,
+            "percent_change_60d": -8.90173297,
+            "percent_change_90d": -10.61814669,
+            "market_cap": 30860932708.25756,
+            "market_cap_dominance": 1.3067,
+            "fully_diluted_market_cap": 54422275138.54,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:20:00.000Z"
+          }
+        }
+      },
+      {
+        "id": 27809,
+        "name": "HarryPotterObamaPacMan8Inu",
+        "symbol": "XRP",
+        "slug": "harrypotterobamapacman8inu",
+        "num_market_pairs": 12,
+        "date_added": "2023-08-11T16:17:34.000Z",
+        "tags": [
+          {
+            "slug": "memes",
+            "name": "Memes",
+            "category": "INDUSTRY"
+          }
+        ],
+        "max_supply": 100000000,
+        "circulating_supply": 81597516.46817164,
+        "total_supply": 83510918.65353455,
+        "platform": {
+          "id": 1027,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "slug": "ethereum",
+          "token_address": "0x07E0EDf8ce600FB51d44F51E3348D77D67F298ae"
+        },
+        "is_active": 1,
+        "infinite_supply": false,
+        "cmc_rank": 1722,
+        "is_fiat": 0,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "tvl_ratio": null,
+        "last_updated": "2024-10-20T17:20:00.000Z",
+        "quote": {
+          "USD": {
+            "price": 0.01775413276473144,
+            "volume_24h": 60493.12738158,
+            "volume_change_24h": -7.3144,
+            "percent_change_1h": -3.99150251,
+            "percent_change_24h": -10.13933746,
+            "percent_change_7d": 459.80640381,
+            "percent_change_30d": 459.80640381,
+            "percent_change_60d": 395.35736725,
+            "percent_change_90d": 309.90662597,
+            "market_cap": 1448693.1406482793,
+            "market_cap_dominance": 0,
+            "fully_diluted_market_cap": 1775413.28,
+            "tvl": null,
+            "last_updated": "2024-10-20T17:20:00.000Z"
+          }
+        }
+      }
+    ]
+  }
+}

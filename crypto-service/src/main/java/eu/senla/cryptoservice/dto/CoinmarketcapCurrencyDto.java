@@ -1,8 +1,6 @@
-package eu.senla.cryptoservice.entity;
+package eu.senla.cryptoservice.dto;
 
 import lombok.*;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -10,14 +8,10 @@ import java.time.LocalDateTime;
 @Builder
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("COINMARKETCAP_CURRENCY")
-public class CoinmarketcapCurrencyEntity {
+public class CoinmarketcapCurrencyDto {
 
-    @Id
-    private String id;
     private String cryptocurrency;
     private BigDecimal price;
     private BigDecimal volume24h;
@@ -27,4 +21,3 @@ public class CoinmarketcapCurrencyEntity {
     private Double percentChange30d;
     private LocalDateTime dateTime;
 }
-

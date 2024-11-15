@@ -1,6 +1,6 @@
 package eu.senla.cryptoservice.controller;
 
-import eu.senla.cryptoservice.entity.CoinmarketcapCurrencyEntity;
+import eu.senla.cryptoservice.dto.CoinmarketcapCurrencyDto;
 import eu.senla.cryptoservice.service.CoinmarketcapCurrencyService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -16,9 +16,9 @@ public class CoinmarketcapGraphQLController {
     private final CoinmarketcapCurrencyService coinmarketcapCurrencyService;
 
     @QueryMapping
-    public Iterable<CoinmarketcapCurrencyEntity> getAllBy(@Argument String cryptocurrency,
-                                                          @Argument int page,
-                                                          @Argument int size) {
+    public Iterable<CoinmarketcapCurrencyDto> getAllBy(@Argument String cryptocurrency,
+                                                       @Argument int page,
+                                                       @Argument int size) {
         return coinmarketcapCurrencyService.findAllBy(cryptocurrency, page, size);
     }
 }

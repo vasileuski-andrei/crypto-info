@@ -21,7 +21,7 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = "${spring.kafka.topics.topic-exmo-user-info}")
     public void exmoUserInfoListener(String data) {
-        ExmoInfoDto exmoInfoDto = null;
+        ExmoInfoDto exmoInfoDto;
         try {
             exmoInfoDto = objectMapper.readValue(data, ExmoInfoDto.class);
         } catch (JsonProcessingException e) {
@@ -38,16 +38,14 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = "${spring.kafka.topics.topic-exmo-currency-list}")
     public void exmoCurrencyListListener(String data) {
-        ExmoInfoDto exmoInfoDto = null;
+        ExmoInfoDto exmoInfoDto;
         try {
             exmoInfoDto = objectMapper.readValue(data, ExmoInfoDto.class);
         } catch (JsonProcessingException e) {
             throw new CommonConversionException("[KafkaConsumer.exmoCurrencyListListener]Error conversion from String to ExmoInfoDto");
         }
         String currencies = exmoInfoDto.getCurrencyList().stream()
-                .map(currencyDto -> {
-                    return String.format("%s %s", currencyDto.getName(), currencyDto.getDescription());
-                })
+                .map(currencyDto -> String.format("%s %s", currencyDto.getName(), currencyDto.getDescription()))
                 .collect(Collectors.joining("\n"));
 
         telegramBot.sendAnswer(currencies);
